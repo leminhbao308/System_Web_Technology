@@ -6,6 +6,12 @@
     /* font-family: 'Source Code Pro', monospace; */
 }
 
+html {
+    font-size: 16px;
+}
+
+/* Container */
+
 .container {
     width: 100%;
 }
@@ -13,6 +19,7 @@
 /* Header */
 header {
     width: 100%;
+    font-size: 16px;
 }
 
 /* Contact */
@@ -22,7 +29,7 @@ header {
     padding: 0 20%;
     display: flex;
     justify-content: space-between;
-    font-size: 1rem;
+    font-size: 1em;
     background: rgba(113, 113, 113, 0.1);
 }
 
@@ -39,7 +46,7 @@ header {
     color: #3350fe;
 }
 
-/* Contatc -> Info */
+/* Contact -> Info */
 .contact .info {
     width: 50%;
     display: flex;
@@ -65,7 +72,7 @@ header {
     color: #3350fe;
 }
 
-/* Contatc -> Account */
+/* Contact -> Account */
 .contact .account {
     width: 50%;
     display: flex;
@@ -80,12 +87,159 @@ header {
 
 /* Navbar */
 nav {
+    width: 100%;
     font-size: 3rem;
     display: flex;
     justify-content: center;
-    padding: 50px 0px;
+    padding: 0 20%;
+}
+
+nav .narbar {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+nav .narbar .logo {
+    height: 50px;
+}
+
+nav .narbar .logo img {
+    height: 100%;
+}
+
+/* search  and category */
+nav .narbar .search {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    border: 2px solid #3350fe;
+    border-radius: 30px;
+}
+
+nav .narbar .search select {
+    height: 100%;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-left: 1em;
+    background: rgba(255, 255, 255, 0.8);
+    outline: none;
+}
+
+nav .narbar .search select:hover {
+    cursor: pointer;
+}
+
+nav .narbar .search input {
+    width: 80%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-left: 1px solid rgb(194, 194, 194);
+    padding-left: 20px;
+}
+
+
+nav .narbar .search .icon_search {
+    width: 60px;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+nav .narbar .search i {
+    font-size: 0.4em;
+}
+
+nav .narbar .search i:hover {
+    color: #3350fe;
+    cursor: pointer;
+}
+
+/* Cart shopping */
+nav .narbar .cart {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav .narbar .cart i {
+    height: 100%;
+    width: 40%;
 }
 
 
 
+nav .narbar .cart .quantity {
+    width: 25px;
+    height: 25px;
+    font-size: 0.25em;
+    font-weight: bold;
+    color: white;
+    background: #3350fe;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    left: 45px;
+}
+
+nav .narbar .cart:hover .quantity {
+    background: black;
+}
+
+nav .narbar .cart i:hover.quantity {
+    background: black;
+}
+
+nav .narbar .cart .info {
+    width: 60%;
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav .narbar .cart .info .title {
+    font-size: 1em;
+}
+
+nav .narbar .cart .info .price {
+    font-size: 1.6em;
+}
+
 /* RESPONSIVE */
+/* Laptop 15.6 inch max-width: 1920px Full HD */
+@media only screen and (max-width: 120em) {
+    .contact {
+        padding: 0 12%;
+        height: 40px;
+        font-size: 0.8em;
+
+    }
+}
+
+/* Tablet max-width: 1023px*/
+@media only screen and (max-width: 63.9375em) {
+    .contact {}
+}
+
+/* Phone  max-width: 600px*/
+@media only screen and (max-width: 37.5em) {
+    .contact {}
+}
