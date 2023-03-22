@@ -10,117 +10,132 @@ html {
     font-size: 16px;
 }
 
-/* Container */
+/* ----------------Container---------------- */
 
 .container {
-    width: 100%;
-}
-
-/* Header */
-header {
     width: 100%;
     font-size: 16px;
 }
 
-/* Contact */
-.contact {
+/* ----------------Header---------------- */
+header {
     width: 100%;
-    height: 30px;
-    padding: 0 20%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1em;
-    background: rgba(113, 113, 113, 0.1);
 }
 
-.contact li {
+/* ----------------Contact---------------- */
+header .contact {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    background: rgba(113, 113, 113, 0.1);
+    font-size: 0.8em;
+}
+
+header .contact .content {
+    width: 1240px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .contact li {
     list-style: none;
 }
 
-.contact a {
+header .contact a {
     text-decoration: none;
     color: black;
 }
 
-.contact a:hover {
+header .contact a:hover {
     color: #3350fe;
 }
 
-/* Contact -> Info */
-.contact .info {
-    width: 50%;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.contact .info li {
-    color: grey;
-    font-weight: 550;
-}
-
-.contact .info li span {
-    color: black;
-}
-
-.contact .info li a {
-    font-weight: normal;
-    color: grey;
-}
-
-.contact .info li a:hover {
-    color: #3350fe;
-}
-
-/* Contact -> Account */
-.contact .account {
+/* ----------------Contact -> Info---------------- */
+header .contact .content .info {
     width: 50%;
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    justify-content: end;
+    padding-left: 30px;
 }
 
-.contact .account a {
+header .contact .content .info li {
+    color: grey;
+    font-weight: 550;
+}
+
+header .contact .content .info li span {
+    color: black;
+}
+
+header .contact .content .info li a {
+    font-weight: normal;
+    color: grey;
+}
+
+header .contact .content .info li a:hover {
+    color: #3350fe;
+}
+
+/* ----------------Contact -> Account---------------- */
+header .contact .content .account {
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: end;
+    padding-right: 30px;
+}
+
+header .contact .content .account a {
     font-weight: 530;
 }
 
-/* Navbar */
-nav {
-    width: 100%;
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    padding: 0 20%;
+/* ----------------toggle_contact---------------- */
+header .contact .content .toggle_contact {
+    display: none;
 }
 
-nav .narbar {
+/* ----------------Navbar---------------- */
+header nav {
     width: 100%;
-    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ----------------NarBar -> logo + search + cart---------------- */
+header nav .navbar {
+    width: 1240px;
+    height: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 30px;
 }
 
-/* Logo */
-nav .narbar .logo {
-    height: 50px;
+/* ----------------Logo---------------- */
+header nav .navbar .logo {
+    height: 40px;
 }
 
-nav .narbar .logo img {
+header nav .navbar .logo img {
     height: 100%;
 }
 
-/* search  and category */
-nav .narbar .search {
-    width: 50%;
-    height: 50px;
+/* ----------------search  and category---------------- */
+header nav .navbar .search {
+    width: 60%;
+    height: 40px;
     display: flex;
     border: 2px solid #3350fe;
     border-radius: 30px;
 }
 
-nav .narbar .search select {
+header nav .navbar .search select {
+    width: 200px;
     height: 100%;
     border: none;
     border-top-left-radius: 30px;
@@ -130,12 +145,12 @@ nav .narbar .search select {
     outline: none;
 }
 
-nav .narbar .search select:hover {
+header nav .navbar .search select:hover {
     cursor: pointer;
 }
 
-nav .narbar .search input {
-    width: 80%;
+header nav .navbar .search input {
+    width: 85%;
     height: 100%;
     outline: none;
     border: none;
@@ -144,48 +159,47 @@ nav .narbar .search input {
 }
 
 
-nav .narbar .search .icon_search {
+header nav .navbar .search .icon_search {
     width: 60px;
     height: 100%;
     background: white;
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
-nav .narbar .search i {
-    font-size: 0.4em;
+header nav .navbar .search i {
+    font-size: 0.85em;
+    font-weight: bold;
 }
 
-nav .narbar .search i:hover {
+header nav .navbar .search i:hover {
     color: #3350fe;
     cursor: pointer;
 }
 
-/* Cart shopping */
-nav .narbar .cart {
-    width: 200px;
-    height: 50px;
+/* ----------------Cart shopping---------------- */
+header nav .navbar .cart {
+    width: 120px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
-nav .narbar .cart i {
+header nav .navbar .cart i {
     height: 100%;
-    width: 40%;
+    width: 20%;
+    font-size: 2.3em;
 }
 
-
-
-nav .narbar .cart .quantity {
-    width: 25px;
-    height: 25px;
-    font-size: 0.25em;
+header nav .navbar .cart .quantity {
+    width: 23px;
+    height: 23px;
+    font-size: 0.75em;
     font-weight: bold;
     color: white;
     background: #3350fe;
@@ -195,51 +209,130 @@ nav .narbar .cart .quantity {
     align-items: center;
     position: absolute;
     top: -10px;
-    left: 45px;
+    left: 35px;
 }
 
-nav .narbar .cart:hover .quantity {
+header nav .navbar .cart:hover .quantity {
     background: black;
 }
 
-nav .narbar .cart i:hover.quantity {
-    background: black;
-}
-
-nav .narbar .cart .info {
-    width: 60%;
+header nav .navbar .cart .info {
     height: 100%;
-    font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: end;
 }
 
-nav .narbar .cart .info .title {
-    font-size: 1em;
+header nav .navbar .cart .info .title {
+    font-size: 0.8em;
+    width: 60px;
+    text-align: left;
 }
 
-nav .narbar .cart .info .price {
-    font-size: 1.6em;
+header nav .navbar .cart .info .price {
+    width: 60px;
+    font-size: 1.2em;
+    text-align: left;
 }
 
-/* RESPONSIVE */
+/* ----------------Menu---------------- */
+header nav .menu {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+header nav .menu ul {
+    width: 1240px;
+    height: 100%;
+    padding: 0px 30px;
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+    align-items: center;
+}
+
+header nav .menu ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+header nav .menu ul a:hover {
+    color: #3350fe;
+}
+
+header nav .menu ul a i {
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+header nav .menu ul li ul {
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 200px;
+    height: auto;
+    padding: 10px 20px;
+    position: absolute;
+    display: none;
+
+}
+
+header nav .menu ul li ul li {
+    padding: 5px 0;
+
+}
+
+header nav .menu ul li ul li a {
+    font-weight: 500;
+}
+
+header nav .menu ul li:hover>ul {
+    display: block;
+}
+
+header nav .menu ul li ul li a:hover {
+    border-bottom: 1px solid #3350fe;
+    color: black;
+}
+
+/* ----------------RESPONSIVE---------------- */
+
 /* Laptop 15.6 inch max-width: 1920px Full HD */
 @media only screen and (max-width: 120em) {
-    .contact {
-        padding: 0 12%;
-        height: 40px;
-        font-size: 0.8em;
 
+    /* Contact */
+    header .contact {
+        font-size: 0.8em;
+    }
+
+    /* Nav */
+}
+
+/* Tablet max-width: 1024px*/
+@media only screen and (max-width: 64em) {
+
+    /* Contact */
+    header .contact {
+        height: 34px;
+    }
+
+    header .contact .content .info,
+    header .contact .content .account {
+        display: none;
+    }
+
+    header .contact .content .toggle_contact {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-/* Tablet max-width: 1023px*/
-@media only screen and (max-width: 63.9375em) {
-    .contact {}
-}
-
 /* Phone  max-width: 600px*/
-@media only screen and (max-width: 37.5em) {
-    .contact {}
-}
+@media only screen and (max-width: 37.5em) {}
