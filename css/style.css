@@ -244,6 +244,7 @@ header nav .menu {
     justify-content: center;
 }
 
+/* ---------Level 00------------ */
 header nav .menu ul {
     width: 1240px;
     height: 100%;
@@ -270,30 +271,32 @@ header nav .menu ul a i {
     font-size: 10px;
 }
 
+/* ---------Level 01------------ */
 header nav .menu ul li ul {
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 200px;
     height: auto;
     padding: 10px 20px;
     position: absolute;
     display: none;
-
 }
 
+header nav .menu ul li:hover>ul {
+    display: block;
+}
+
+/* ---------Level 02------------ */
 header nav .menu ul li ul li {
     padding: 5px 0;
-
 }
 
 header nav .menu ul li ul li a {
     font-weight: 500;
 }
 
-header nav .menu ul li:hover>ul {
-    display: block;
-}
+
 
 header nav .menu ul li ul li a:hover {
     border-bottom: 1px solid #3350fe;
