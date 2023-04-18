@@ -11,6 +11,8 @@
     <link href="/fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="/fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
     <link href="/fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- favicon -->
     <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
     <!-- Font family -->
@@ -21,6 +23,8 @@
         rel="stylesheet">
     <!-- Style css -->
     <link rel="stylesheet" href="/css/style.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -51,50 +55,52 @@
                         <a href="#"><img src="/images/logo/device-home-1-logo.png" alt="logo Devicer"
                                 title="Devicer"></a>
                     </div>
-                    <div class="search">
-                        <select name="categories" id="categories">
-                            <option value="allCategories">All Categories</option>
-                            <option value="acoustics">Acoustics</option>
-                            <option value="actionCamcorders">Action Camcorders</option>
-                            <option value="apple">Apple</option>
-                            <option value="appleIMac">Apple iMac</option>
-                            <option value="appleIPads">Apple iPads</option>
-                            <option value="appleIPadsMini">Apple iPads Mini</option>
-                            <option value="appleLEDTVs">Apple LED TVs</option>
-                            <option value="appleMacbook">Apple Macbook</option>
-                            <option value="asus">Asus</option>
-                            <option value="camera">Camera</option>
-                            <option value="cellPhones">Cell Phones</option>
-                            <option value="computerHardware">Computer Hardware</option>
-                            <option value="daydreamView">Daydream View</option>
-                            <option value="dellLaptop">Dell Laptop</option>
-                            <option value="earHeadphones">Ear Headphones</option>
-                            <option value="headphones">Headphones</option>
-                            <option value="HTC">HTC</option>
-                            <option value="iphone">Iphone</option>
-                            <option value="Keyboards">Keyboards</option>
-                            <option value="laptops">Laptops</option>
-                            <option value="ledTVs">LED TVs</option>
-                            <option value="Meizu">Meizu</option>
-                            <option value="Mice">Mice</option>
-                            <option value="Motorola">Motorola</option>
-                            <option value="Monitors">Monitors</option>
-                            <option value="nokia">Nokia</option>
-                            <option value="onePlus">OnePlus</option>
-                            <option value="over-Ear&On-EarHeadphones">Over-Ear & On-Ear Headphones</option>
-                            <option value="powerbank">Powerbank</option>
-                            <option value="samsung">Samsung</option>
-                            <option value="smartWatches">Smart Watches</option>
-                            <option value="sony">Sony</option>
-                            <option value="tablets">Tablets</option>
-                            <option value="televisions">Televisions</option>
-                            <option value="xiaomi">Xiaomi</option>
-                        </select>
-                        <input type="text" placeholder="Search for products">
-                        <div class="icon_search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                    <form action="#">
+                        <div class="search">
+                            <select name="categories" id="categories">
+                                <option value="allCategories">All Categories</option>
+                                <option value="acoustics">Acoustics</option>
+                                <option value="actionCamcorders">Action Camcorders</option>
+                                <option value="apple">Apple</option>
+                                <option value="appleIMac">Apple iMac</option>
+                                <option value="appleIPads">Apple iPads</option>
+                                <option value="appleIPadsMini">Apple iPads Mini</option>
+                                <option value="appleLEDTVs">Apple LED TVs</option>
+                                <option value="appleMacbook">Apple Macbook</option>
+                                <option value="asus">Asus</option>
+                                <option value="camera">Camera</option>
+                                <option value="cellPhones">Cell Phones</option>
+                                <option value="computerHardware">Computer Hardware</option>
+                                <option value="daydreamView">Daydream View</option>
+                                <option value="dellLaptop">Dell Laptop</option>
+                                <option value="earHeadphones">Ear Headphones</option>
+                                <option value="headphones">Headphones</option>
+                                <option value="HTC">HTC</option>
+                                <option value="iphone">Iphone</option>
+                                <option value="Keyboards">Keyboards</option>
+                                <option value="laptops">Laptops</option>
+                                <option value="ledTVs">LED TVs</option>
+                                <option value="Meizu">Meizu</option>
+                                <option value="Mice">Mice</option>
+                                <option value="Motorola">Motorola</option>
+                                <option value="Monitors">Monitors</option>
+                                <option value="nokia">Nokia</option>
+                                <option value="onePlus">OnePlus</option>
+                                <option value="over-Ear&On-EarHeadphones">Over-Ear & On-Ear Headphones</option>
+                                <option value="powerbank">Powerbank</option>
+                                <option value="samsung">Samsung</option>
+                                <option value="smartWatches">Smart Watches</option>
+                                <option value="sony">Sony</option>
+                                <option value="tablets">Tablets</option>
+                                <option value="televisions">Televisions</option>
+                                <option value="xiaomi">Xiaomi</option>
+                            </select>
+                            <input type="text" placeholder="Search for products">
+                            <div class="icon_search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                     <div class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <div class="quantity">
@@ -119,29 +125,223 @@
                             </ul>
                         </li>
                         <li><a href="#">Shortcodes <i class="fa-solid fa-angle-down"></i></a>
-                            <ul class="level02_01">
-                                <li>1
-                                    <ul class="level03">
-                                        <li><a href="#">Blog shortcode</a></li>
-                                        <li><a href="#">Button & icon</a></li>
-                                        <li><a href="#">Clients</a></li>
-                                        <li><a href="#">Counter & progress Bars</a></li>
-                                        <li><a href="#">Custom HTML, CSS, JS</a></li>
-                                        <li><a href="#">Dividers</a></li>
-                                    </ul>
+                            <ul class="level02 ver1">
+                                <li>
+                                    <a class="title" href="#">1</a>
+                                    <a href="#">Blog shortcode</a>
+                                    <a href="#">Button & icon</a>
+                                    <a href="#">Clients</a>
+                                    <a href="#">Counter & progress Bars</a>
+                                    <a href="#">Custom HTML, CSS, JS</a>
+                                    <a href="#">Dividers</a>
                                 </li>
-                                <li>2</li>
-                                <li>3</li>
-                                <li>4</li>
+                                <li><a class="title" href="#">2</a>
+                                    <a href="#">Blog shortcode</a>
+                                    <a href="#">Button & icon</a>
+                                    <a href="#">Clients</a>
+                                    <a href="#">Counter & progress Bars</a>
+                                    <a href="#">Custom HTML, CSS, JS</a>
+                                    <a href="#">Dividers</a>
+                                </li>
+                                <li><a class="title" href="#">3</a>
+                                    <a href="#">Blog shortcode</a>
+                                    <a href="#">Button & icon</a>
+                                    <a href="#">Clients</a>
+                                    <a href="#">Counter & progress Bars</a>
+                                    <a href="#">Custom HTML, CSS, JS</a>
+                                    <a href="#">Dividers</a>
+                                </li>
+                                <li><a class="title" href="#">4</a>
+                                    <a href="#">Blog shortcode</a>
+                                    <a href="#">Button & icon</a>
+                                    <a href="#">Clients</a>
+                                    <a href="#">Counter & progress Bars</a>
+                                    <a href="#">Custom HTML, CSS, JS</a>
+                                    <a href="#">Dividers</a>
+                                </li>
                             </ul>
                         </li>
-                        <li><a href="#">Post Types <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#">Post Types <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="level02 ver1">
+                                <li>
+                                    <a class="title" href="#">Blog</a>
+                                    <a href="#">Standard Blog</a>
+                                    <a href="#">Masonry Blog</a>
+                                    <a href="#">Timeline Blog</a>
+                                </li>
+                                <li><a class="title" href="#">Project Grid</a>
+                                    <a href="#">Large Gap</a>
+                                    <a href="#">No Gap</a>
+                                    <a href="#">1 Pixel Gap</a>
+                                </li>
+                                <li><a class="title" href="#">Masonry Puzzle</a>
+                                    <a href="#">Large Gap</a>
+                                    <a href="#">No Gap</a>
+                                    <a href="#">1 Pixel Gap</a>
+                                </li>
+                                <li><a class="title" href="#">Profiles</a>
+                                    <a href="#">Horizontal</a>
+                                    <a href="#">Vertical</a>
+                                    <a href="#">Open Profile</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li><a href="#">Shop</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
     </div>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/images/slideShow/01-1-1.jpg" alt="">
+                <div class="contents">
+                    <div class="title">
+                        New Collection Comming To Town
+                    </div>
+                    <div class="description">
+                        Introducing fashionable & gorggeous
+                        watch From design to stylish wearable
+                    </div>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="/images/slideShow/02-1.jpg" alt="">
+                <div class="contents">
+                    <div class="title">
+                        New Collection Comming To Town
+                    </div>
+                    <div class="description">
+                        Introducing fashionable & gorggeous
+                        watch From design to stylish wearable
+                    </div>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="/images/slideShow/03-1.jpg" alt="">
+                <div class="contents">
+                    <div class="title">
+                        New Collection Comming To Town
+                    </div>
+                    <div class="description">
+                        Introducing fashionable & gorggeous
+                        watch From design to stylish wearable
+                    </div>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+    <div class="services">
+        <div class="container-custom">
+            <div class="box">
+                <div class="box-item">
+                    <div class="left">
+                        <i class='bx bx-home'></i>
+                    </div>
+                    <div class="right">
+                        <div class="title">Home Shipping</div>
+                        <div class="description">Free for all order</div>
+                    </div>
+                </div>
+                <div class="box-item">
+                    <div class="left">
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <div class="right">
+                        <div class="title">100% Refund</div>
+                        <div class="description">Cash Back</div>
+                    </div>
+                </div>
+                <div class="box-item">
+                    <div class="left">
+                        <i class='bx bx-shield-plus'></i>
+                    </div>
+                    <div class="right">
+                        <div class="title">Cliens' Sipport</div>
+                        <div class="description">Fast Service</div>
+                    </div>
+                </div>
+                <div class="box-item">
+                    <div class="left">
+                        <i class='bx bx-rocket'></i>
+                    </div>
+                    <div class="right">
+                        <div class="title">Fast Delivery</div>
+                        <div class="description">Best Service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-product01">
+        <div class="card-item item1">
+            <div class="content">
+                <div class="heading">
+                    New Step
+                </div>
+                <a href="#">Apple iPhone</a>
+                <div class="title">
+                    Starting at
+                </div>
+                <div class="price">
+                    $599
+                </div>
+            </div>
+        </div>
+        <div class="card-item item2">
+            <div class="content">
+                <div class="heading">
+                    One Shot
+                </div>
+                <a href="#">iMac Pro Xeon <br>
+                     Radeon Vega</a>
+                <div class="title">
+                    Starting at
+                </div>
+                <div class="price">
+                    $599
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card-sales">
+            <div class="card-item">
+                <div class="left">
+                     <a href="#"><img src="/images/productSales/1-3.jpg" alt=""></a>
+                </div>
+                <div class="right"></div>
+            </div>
+            <div class="card-item">
+                <div class="left">
+                     <a href="#"><img src="/images/productSales/2-3.jpg" alt=""></a>
+                </div>
+                <div class="right"></div>
+            </div>
+            <div class="card-item">
+                <div class="left">
+                     <a href="#"><img src="/images/productSales/4-540x540.jpg" alt=""></a>
+                </div>
+                <div class="right"></div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            centeredSlides: true,
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false
+            },
+        });
+    </script>
 </body>
 
 </html>

@@ -1,3 +1,9 @@
+:root {
+    --color-blue: #3350fe;
+    --color-price-yellow: #f9db76;
+    --color-price-pink: #fb8aaf;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,11 +31,12 @@ header {
 /* ----------------Contact---------------- */
 header .contact {
     width: 100%;
-    height: 30px;
+    height: 40px;
     display: flex;
     justify-content: center;
     background: rgba(113, 113, 113, 0.1);
-    font-size: 0.8em;
+    font-size: 13px;
+    align-items: baseline;
 }
 
 header .contact .content {
@@ -126,9 +133,13 @@ header nav .navbar .logo img {
 }
 
 /* ----------------search  and category---------------- */
-header nav .navbar .search {
+header nav .navbar form {
     width: 60%;
-    height: 40px;
+}
+
+header nav .navbar .search {
+    width: 100%;
+    height: 48px;
     display: flex;
     border: 2px solid #3350fe;
     border-radius: 30px;
@@ -239,13 +250,14 @@ header nav .navbar .cart .info .price {
 /* ----------------Menu---------------- */
 header nav .menu {
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-/* ---------Level 00------------ */
-header nav .menu ul {
+/* ---------Level 01------------ */
+header nav .menu .level01 {
     width: 1240px;
     height: 100%;
     padding: 0px 30px;
@@ -255,52 +267,286 @@ header nav .menu ul {
     align-items: center;
 }
 
-header nav .menu ul a {
+.menu .level01 li {
+    height: 100%;
+    position: relative;
+}
+
+.menu .level01 li a {
     text-decoration: none;
     color: black;
-    font-size: 0.9em;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 600;
 }
 
-header nav .menu ul a:hover {
-    color: #3350fe;
-}
-
-header nav .menu ul a i {
-    margin-left: 5px;
-    font-size: 10px;
-}
-
-/* ---------Level 01------------ */
-header nav .menu ul li ul {
-    flex-direction: column;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 200px;
-    height: auto;
-    padding: 10px 20px;
-    position: absolute;
-    display: none;
-}
-
-header nav .menu ul li:hover>ul {
-    display: block;
+.menu .level01 li:hover>a {
+    color: var(--color-blue);
+    width: max-content;
 }
 
 /* ---------Level 02------------ */
-header nav .menu ul li ul li {
-    padding: 5px 0;
+.menu .level01 .level02 {
+    display: none;
 }
 
-header nav .menu ul li ul li a {
-    font-weight: 500;
+.menu .level01 li:hover .level02 {
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 15px;
+    background: white;
+    top: 40px;
+    z-index: 99;
 }
 
+.menu .level01 li:hover .level02.ver1 {
+    width: 900px;
+    padding: 20px 0px 20px 30px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: absolute;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 20px;
+}
 
+.menu .level01 .level02 li {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-right: 20px;
+}
 
-header nav .menu ul li ul li a:hover {
-    border-bottom: 1px solid #3350fe;
+.menu .level01 .level02 li a {
     color: black;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.menu .level01 .level02 li a.title {
+    font-weight: bold;
+}
+
+.menu .level01 .level02 li a.title:hover {
+    color: black;
+    border: none;
+
+}
+
+.menu .level01 .level02 li a:hover {
+    border-bottom: 1px solid var(--color-blue);
+    color: var(--color-blue);
+}
+
+/* ----------------Slide show----------------- */
+.swiper {
+    width: 100%;
+    height: 492px;
+    display: flex;
+}
+
+.swiper-wrapper {
+    width: 100%;
+}
+
+.swiper-wrapper .swiper-slide {
+    width: 100%;
+    position: relative;
+}
+
+.swiper-wrapper .swiper-slide img {
+    width: 100%;
+}
+
+.swiper-wrapper .swiper-slide .contents {
+    position: absolute;
+    top: 0;
+    left: 27%;
+    color: white;
+}
+
+.swiper-slide .contents .title {
+    padding-top: 90px;
+    width: 600px;
+    font-size: 58px;
+    line-height: 60px;
+}
+
+.swiper-slide .contents .description {
+    margin-top: 40px;
+    width: 450px;
+    font-size: 22px;
+    color: rgb(191, 191, 191);
+}
+
+.swiper-slide .contents button {
+    margin-top: 50px;
+    height: 40px;
+    padding: 6px 30px;
+    font-size: 13px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: var(--color-blue);
+    color: white;
+    font-weight: 600;
+}
+
+.swiper-slide .contents button:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* ----------------Services------------------- */
+.services {
+    width: 100%;
+    height: 250px;
+    background-image: url(/images/backGround/dotGrid.png);
+    display: flex;
+    justify-content: center;
+}
+
+.container-custom {
+    width: 1240px;
+    padding: 60px 0;
+}
+
+.container-custom .box {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 7px;
+    display: flex;
+}
+
+.box .box-item {
+    width: calc(100% /4);
+    height: 100%;
+    display: flex;
+}
+
+.box .box-item .left {
+    width: 150px;
+    height: 100%;
+    font-size: 50px;
+    font-weight: normal;
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .box-item .right {
+    width: 100%;
+    height: 100%;
+    padding-top: 35px;
+    border-right: 1px solid rgb(210, 210, 210);
+}
+
+.box .box-item .right .title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box .box-item .right .description {
+    font-size: 14px;
+    color: grey;
+}
+
+/* -------------------Card Product 01---------------- */
+.card-product01 {
+    width: 100%;
+    padding: 60px 25.8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-product01 .card-item {
+    width: 600px;
+    height: 260px;
+    background-size: cover;
+    background-position: right;
+    border-radius: 15px;
+    padding: 35px 0px 0px 67px;
+    color: white;
+}
+
+.card-product01 .card-item.item1 {
+    background-image: url(/images/cardProduct01/featured-2-2.jpg);
+}
+
+.card-product01 .card-item.item2 {
+    background-image: url(/images/cardProduct01/featured-1-1-2.jpg);
+}
+
+.card-product01 .card-item .heading {
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(220, 220, 220);
+}
+.card-product01 .card-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+}
+.card-product01 .card-item a:hover {
+    color: grey;
+}
+.card-product01 .card-item .title {
+    margin-top: 15px;
+    font-size: 16px;
+    color: grey;
+}
+
+.card-product01 .card-item.card-item.item1 .price {
+    font-size: 40px;
+    color: var(--color-price-yellow);
+}
+
+.card-product01 .card-item.card-item.item2 .price {
+    font-size: 40px;
+    color: var(--color-price-pink);
+}
+/* ----------------Product Sale------------------- */
+.wrapper {
+    width: 100%;
+    padding: 0 25.8%;
+}
+
+.card-sales {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.card-sales .card-item {
+    width: 390px;
+    height: 210px;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+.card-sales .card-item:hover {
+    border-color: var(--color-blue);
+    border-width: 2px;
+}
+
+.card-sales .card-item .left {
+    width: 50%;
+    height: 100%;
+}
+.card-sales .card-item .left img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 /* ----------------RESPONSIVE---------------- */
@@ -309,11 +555,45 @@ header nav .menu ul li ul li a:hover {
 @media only screen and (max-width: 120em) {
 
     /* Contact */
-    header .contact {
-        font-size: 0.8em;
+    header {
+        width: 100%;
+        /* margin: 0px auto; */
     }
 
-    /* Nav */
+    header .contact {
+
+        font-size: 0.79em;
+        height: 40px;
+    }
+
+    .contact .content {
+        max-width: 1340px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* slide show */
+    .swiper-wrapper .swiper-slide .contents {
+        left: 18.8%;
+    }
+    /* service */
+    .container-custom {
+        width: 1180px;
+    }
+    /* Card product01 */
+    .card-product01 {
+        padding: 0px 19%
+    }
+    .card-product01 .card-item {
+        width: 580px;
+    }
+    /* Card sales */
+    .wrapper {
+        padding: 40px 19%;
+    }
+    .card-sales .card-item {
+        width: 380px;
+    }
 }
 
 /* Tablet max-width: 1024px*/
