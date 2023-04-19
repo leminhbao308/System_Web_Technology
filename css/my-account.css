@@ -453,7 +453,7 @@ header nav .menu .level01 {
 }
 
 /* ----------------Button Login---------------- */
-.form-login .button-login #login{
+.form-login .button-login #login {
       width: 100px;
       height: 40px;
       font-size: 11px;
@@ -521,6 +521,7 @@ header nav .menu .level01 {
       padding-left: 15px;
       padding-top: 10px;
 }
+
 .form-lost-password .lost-pwd-input-username #username {
       width: 500px;
       height: 40px;
@@ -559,4 +560,109 @@ header nav .menu .level01 {
       -webkit-transition: 0.5s;
       transition: 0.5s;
 }
+
 /*===================================================== LOST PASSWORD SECTION END========================================================*/
+
+/*==================================================== FOOTER SECTION START=======================================================*/
+
+/* ----------------Ft Container---------------- */
+.ft-container {
+      width: 100%;
+      height: 480px;
+      background-color: #212121;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+.ft-container .footer {
+      width: 1240px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 30px 0px 30px;
+}
+
+/* ----------------Product Label, Customer Service Label, Social Label, Customer Care Label---------------- */
+.ft-container .footer .product .product-label,
+.ft-container .footer .custservice .custservice-label,
+.ft-container .footer .social .social-label,
+.ft-container .footer .custcare .custcare-label {
+      color: white;
+      font-weight: 200;
+      padding-bottom: 25px;
+}
+
+/* ----------------Style Content Div Tag---------------- */
+.ft-container .footer .product .product-content div,
+.ft-container .footer .custservice .custservice-content div,
+.ft-container .footer .social .social-content div,
+.ft-container .footer .custcare .custcare-content div {
+      padding-top: 6px;
+      padding-bottom: 6px;
+}
+
+/* ----------------Style <a> Tag---------------- */
+.ft-container .footer a {
+      text-decoration: none;
+      color: #727272;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+}
+
+.ft-container .footer a:hover {
+      text-decoration: none;
+      color: white;
+      font-weight: 300;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+}
+
+/* ----------------Ending / Ending Section---------------- */
+.ft-container .ending {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-top: 100px;
+      border-top: 1px solid #727272;
+            align-items: center;
+                  justify-content: center;
+}
+
+.ft-container .ending .ending-section {
+      width: 1240px;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+/* ----------------Ending Section Disclaimer---------------- */
+.ft-container .ending .ending-section .ending-section-disclaimer {
+      color: #727272;
+      flex-grow: 1;
+      text-align: left;
+}
+
+/* ----------------Ending Section Redirect---------------- */
+.ft-container .ending .ending-section .ending-section-redirect {
+      display: flex;
+      text-align: right;
+}
+
+/* ----------------Ending Section Redirect Button---------------- */
+.ft-container .ending .ending-section .ending-section-redirect i {
+      color: #727272;
+      padding-left: 15px;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+}
+.ft-container .ending .ending-section .ending-section-redirect i:hover {
+      color: white;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+}
+/*==================================================== FOOTER SECTION END=======================================================*/
+
