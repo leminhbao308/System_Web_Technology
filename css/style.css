@@ -27,7 +27,6 @@ html {
 /* ----------------Header---------------- */
 header {
     width: 100%;
-    position: relative;
 }
 
 /* ----------------Contact---------------- */
@@ -114,10 +113,6 @@ header nav {
     align-items: center;
     flex-direction: column;
     position: fixed;
-    z-index: 99999999;
-    background: white;
-    transition: 0.25s;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 /* ----------------NarBar -> logo + search + cart---------------- */
