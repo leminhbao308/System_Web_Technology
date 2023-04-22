@@ -3,6 +3,7 @@
     --color-price-yellow: #f9db76;
     --color-price-pink: #fb8aaf;
     --color-price-original: #8F8F93;
+    --color-bg-footer: #212121;
 }
 
 * {
@@ -27,6 +28,8 @@ html {
 /* ----------------Header---------------- */
 header {
     width: 100%;
+    position: relative;
+
 }
 
 /* ----------------Contact---------------- */
@@ -38,6 +41,7 @@ header .contact {
     background: rgba(113, 113, 113, 0.1);
     font-size: 13px;
     align-items: baseline;
+
 }
 
 header .contact .content {
@@ -113,6 +117,10 @@ header nav {
     align-items: center;
     flex-direction: column;
     position: fixed;
+    z-index: 99999999;
+    background: white;
+    transition: 0.25s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 /* ----------------NarBar -> logo + search + cart---------------- */
@@ -968,6 +976,7 @@ header nav .menu .level01 {
     color: white;
     padding: 0px 50px;
 }
+
 .product .item2 .title {
     font-size: 22px;
     font-weight: normal;
@@ -977,39 +986,49 @@ header nav .menu .level01 {
     font-size: 22px;
     font-weight: 700;
 }
+
 .product .item2 .description:hover {
     color: var(--color-price-original);
     cursor: pointer;
 }
+
 .product .item2 .price {
     width: 100%;
     margin-top: 30px;
 }
+
 .product .item2 .price del {
     color: var(--color-price-original);
     font-size: 14px;
 }
+
 .product .item2 .price .sale {
     font-size: 32px;
     color: var(--color-price-yellow);
 }
+
 /* -----------------product03------------------ */
 
 .wrapper .product03 {
     width: 100%;
 }
-.product03  .title {
+
+.product03 .title {
     width: 100%;
     padding: 50px 0px 20px 0px;
     font-size: 30px;
 }
+
 .product03 .slideProduct3 {
     width: 100%;
+    margin-top: 20px;
 }
+
 .product03 .slideProduct3 .swiper-wrapper {
     width: 100%;
     text-align: center;
 }
+
 .product03 .slideProduct3 .swiper-wrapper .swiper-slide {
     height: 470px;
     width: 270px;
@@ -1023,7 +1042,7 @@ header nav .menu .level01 {
     position: relative;
 }
 
-.wrapper  .product03 .card:hover {
+.wrapper .product03 .card:hover {
     border-color: var(--color-blue);
 }
 
@@ -1139,25 +1158,33 @@ header nav .menu .level01 {
 .product03 .card .controls .item:hover i {
     color: var(--color-blue);
 }
+
 /* -----------------Product04----------------- */
 
 .wrapper .product04 {
     width: 100%;
 }
-.product04  .title {
+
+.product04 .title {
     width: 100%;
     padding: 50px 0px 20px 0px;
     font-size: 30px;
 }
+
 .product04 .slideProduct4 {
     width: 100%;
+    margin-top: 20px;
+    height: 410px;
 }
+
 .product04 .slideProduct4 .swiper-wrapper {
     width: 100%;
+    height: 100%;
     text-align: center;
 }
+
 .product04 .slideProduct4 .swiper-wrapper .swiper-slide {
-    height: 430px;
+    height: 100%;
     width: 400px;
 }
 
@@ -1168,7 +1195,7 @@ header nav .menu .level01 {
     position: relative;
 }
 
-.wrapper  .product04 .card:hover {
+.wrapper .product04 .card:hover {
     border-color: var(--color-blue);
 }
 
@@ -1186,12 +1213,15 @@ header nav .menu .level01 {
 .product04 .swiper-wrapper .swiper-slide .card header {
     width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 10px 0 0 0;
 }
-.swiper-wrapper .swiper-slide .card header .col1, .swiper-wrapper .swiper-slide .card header .col2 {
+
+.swiper-wrapper .swiper-slide .card header .col1,
+.swiper-wrapper .swiper-slide .card header .col2 {
     font-size: 14px;
 }
+
 .swiper-wrapper .swiper-slide .card header .col1:hover {
     color: var(--color-blue);
     cursor: pointer;
@@ -1200,25 +1230,223 @@ header nav .menu .level01 {
 .swiper-wrapper .swiper-slide .card header .col2 i {
     font-size: 18px;
 }
+
 .swiper-wrapper .swiper-slide .card header .col2 i:hover {
     color: var(--color-blue);
     cursor: pointer;
 }
+
 .product04 .swiper-wrapper .swiper-slide .card .title {
     font-size: 18px;
     padding: 10px 0 0 0;
     text-align: left;
     font-weight: 600;
 }
+
 .product04 .swiper-wrapper .swiper-slide .card .title:hover {
     color: var(--color-blue);
     cursor: pointer;
 }
+
 .product04 .swiper-wrapper .swiper-slide .card .date {
     text-align: left;
     font-size: 14px;
     color: var(--color-price-original);
 }
+
+/* ------------------List Products-------------*/
+.wrapper .list-products {
+    width: 100%;
+    display: flex;
+}
+
+.wrapper .list-products .col {
+    width: 420px;
+}
+
+.wrapper .list-products .col header {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.wrapper .list-products .col header .title {
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.wrapper .list-products .col header .description {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wrapper .list-products .col .card {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.list-products .col .card .item {
+    width: 100%;
+    display: flex;
+}
+
+.list-products .col .card .item .images {
+    width: 100px;
+}
+
+.list-products .col .card .item .images img {
+    width: 100%;
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 10px;
+}
+
+.list-products .col .card .item .images img:hover {
+    cursor: pointer;
+}
+
+.list-products .col .card .item .info {
+    width: 318px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.list-products .col .card .item .info .price {
+    width: 100%;
+}
+
+.list-products .col .card .item .info .price .sale {
+    font-size: 18px;
+    color: rgb(98, 98, 98);
+}
+
+.list-products .col .card .item .info .rate {
+    width: 100%;
+}
+
+.list-products .col .card .item .info .rate img {
+    width: 80px;
+}
+
+.list-products .col .card .item .info .title {
+    font-size: 18px;
+}
+
+.list-products .col .card .item .info .title:hover {
+    color: var(--color-price-original);
+    cursor: pointer;
+}
+
+.list-products .col .card .item .info .cre {
+    font-size: 14px;
+}
+
+/* -----------------brand--------- */
+.wrapper .brand {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper .brand .item {
+    margin: 80px 0px 30px 0px;
+    width: calc(100% / 5);
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+/* ----------------new Letter --------------- */
+.newsLetter {
+    width: 100%;
+    height: 200px;
+    background-image: url(/images/backGround/dotGrid.png);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newsLetter .wrapper .title {
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+.newsLetter .wrapper .description {
+    font-size: 20px;
+}
+
+#footer {
+    width: 100%;
+    height: 460px;
+    background: var(--color-bg-footer);
+}
+
+#footer #links-list .wrapper {
+    width: 100%;
+    height: 385px;
+    border-bottom: 1px solid rgb(91, 91, 91);
+    display: flex;
+}
+
+#footer #links-list .wrapper .col1 {
+    width: calc(100% / 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer #links-list .wrapper .col1 .title {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#footer #links-list .wrapper .col1 .link {
+    margin: 5px 0px;
+}
+
+#footer #links-list .wrapper .col1 .link a {
+    text-decoration: none;
+    color: var(--color-price-original);
+    transition: 0.25s;
+    font-size: 16px;
+    ;
+}
+
+#footer #links-list .wrapper .col1 .link a:hover {
+    color: whitesmoke;
+}
+
+#footer .cre {
+    width: 100%;
+    height: 75px;
+}
+
+#footer .cre .wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-price-original);
+}
+
+#footer .cre .wrapper .col2 a {
+    text-decoration: none;
+    color: var(--color-price-original);
+}
+
+#footer .cre .wrapper .col2 a i {
+    font-size: 18px;
+}
+
+#footer .cre .wrapper .col2 a:hover {
+    color: white;
+}
+
 /* ----------------RESPONSIVE---------------- */
 
 /* Laptop 15.6 inch max-width: 1920px Full HD */
