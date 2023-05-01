@@ -1,0 +1,668 @@
+:root {
+      --color-blue: #3350fe;
+      --color-price-yellow: #f9db76;
+      --color-price-pink: #fb8aaf;
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Noto Sans Lepcha', sans-serif;
+      /* font-family: 'Source Code Pro', monospace; */
+}
+
+html {
+      font-size: 16px;
+}
+
+/* ----------------Container---------------- */
+
+.container {
+      width: 100%;
+      font-size: 16px;
+}
+
+/* ----------------Header---------------- */
+header {
+      width: 100%;
+}
+
+/* ----------------Contact---------------- */
+header .contact {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      background: rgba(113, 113, 113, 0.1);
+      font-size: 13px;
+      align-items: baseline;
+}
+
+header .contact .content {
+      width: 1240px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+}
+
+header .contact li {
+      list-style: none;
+}
+
+header .contact a {
+      text-decoration: none;
+      color: black;
+}
+
+header .contact a:hover {
+      color: #3350fe;
+}
+
+/* ----------------Contact -> Info---------------- */
+header .contact .content .info {
+      width: 50%;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      padding-left: 30px;
+}
+
+header .contact .content .info li {
+      color: grey;
+      font-weight: 550;
+}
+
+header .contact .content .info li span {
+      color: black;
+}
+
+header .contact .content .info li a {
+      font-weight: normal;
+      color: grey;
+}
+
+header .contact .content .info li a:hover {
+      color: #3350fe;
+}
+
+/* ----------------Contact -> Account---------------- */
+header .contact .content .account {
+      width: 50%;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: end;
+      padding-right: 30px;
+}
+
+header .contact .content .account a {
+      font-weight: 530;
+}
+
+/* ----------------toggle_contact---------------- */
+header .contact .content .toggle_contact {
+      display: none;
+}
+
+/* ----------------Navbar---------------- */
+header nav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+}
+
+/* ----------------NarBar -> logo + search + cart---------------- */
+header nav .navbar {
+      width: 1240px;
+      height: 110px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 30px;
+}
+
+/* ----------------Logo---------------- */
+header nav .navbar .logo {
+      height: 40px;
+}
+
+header nav .navbar .logo img {
+      height: 100%;
+}
+
+/* ----------------search  and category---------------- */
+header nav .navbar form {
+      width: 60%;
+}
+
+header nav .navbar .search {
+      width: 100%;
+      height: 48px;
+      display: flex;
+      border: 2px solid #3350fe;
+      border-radius: 30px;
+}
+
+header nav .navbar .search select {
+      width: 200px;
+      height: 100%;
+      border: none;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      padding-left: 1em;
+      background: rgba(255, 255, 255, 0.8);
+      outline: none;
+}
+
+header nav .navbar .search select:hover {
+      cursor: pointer;
+}
+
+header nav .navbar .search input {
+      width: 85%;
+      height: 100%;
+      outline: none;
+      border: none;
+      border-left: 1px solid rgb(194, 194, 194);
+      padding-left: 20px;
+}
+
+
+header nav .navbar .search .icon_search {
+      width: 60px;
+      height: 100%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+}
+
+header nav .navbar .search i {
+      font-size: 0.85em;
+      font-weight: bold;
+}
+
+header nav .navbar .search i:hover {
+      color: #3350fe;
+      cursor: pointer;
+}
+
+/* ----------------Cart shopping---------------- */
+header nav .navbar .cart {
+      width: 120px;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+}
+
+header nav .navbar .cart i {
+      height: 100%;
+      width: 20%;
+      font-size: 2.3em;
+}
+
+header nav .navbar .cart .quantity {
+      width: 23px;
+      height: 23px;
+      font-size: 0.75em;
+      font-weight: bold;
+      color: white;
+      background: #3350fe;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -10px;
+      left: 35px;
+}
+
+header nav .navbar .cart:hover .quantity {
+      background: black;
+}
+
+header nav .navbar .cart .info {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: end;
+}
+
+header nav .navbar .cart .info .title {
+      font-size: 0.8em;
+      width: 60px;
+      text-align: left;
+}
+
+header nav .navbar .cart .info .price {
+      width: 60px;
+      font-size: 1.2em;
+      text-align: left;
+}
+
+/* ----------------Menu---------------- */
+header nav .menu {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+/* ---------Level 01------------ */
+header nav .menu .level01 {
+      width: 1240px;
+      height: 100%;
+      padding: 0px 30px;
+      display: flex;
+      list-style-type: none;
+      gap: 2em;
+      align-items: center;
+}
+
+.menu .level01 li {
+      height: 100%;
+      position: relative;
+}
+
+.menu .level01 li a {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+      font-weight: 600;
+}
+
+.menu .level01 li:hover>a {
+      color: var(--color-blue);
+      width: max-content;
+}
+
+/* ---------Level 02------------ */
+.menu .level01 .level02 {
+      display: none;
+}
+
+.menu .level01 li:hover .level02 {
+      width: 200px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      position: absolute;
+      border: 1px solid rgb(202, 202, 202);
+      border-radius: 15px;
+      background: white;
+      top: 40px;
+      z-index: 99;
+}
+
+.menu .level01 li:hover .level02.ver1 {
+      width: 900px;
+      padding: 20px 0px 20px 30px;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      position: absolute;
+      border: 1px solid rgb(202, 202, 202);
+      border-radius: 20px;
+}
+
+.menu .level01 .level02 li {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      margin-right: 20px;
+}
+
+.menu .level01 .level02 li a {
+      color: black;
+      font-weight: normal;
+      margin-top: 10px;
+}
+
+.menu .level01 .level02 li a.title {
+      font-weight: bold;
+}
+
+.menu .level01 .level02 li a.title:hover {
+      color: black;
+      border: none;
+
+}
+
+.menu .level01 .level02 li a:hover {
+      border-bottom: 1px solid var(--color-blue);
+      color: var(--color-blue);
+}
+
+/* ----------------Redirect---------------- */
+.redirect {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+}
+
+/* ----------------Redirect Center---------------- */
+.redirect .redirect-center {
+      width: 1240px;
+      font-size: 15px;
+      padding: 30px 30px 10px 30px;
+}
+
+/* ----------------Redirect Title---------------- */
+.redirect .redirect-title {
+      width: 1240px;
+      padding-left: 30px;
+      padding-right: 30px;
+}
+
+/* ----------------Redirect Title Content---------------- */
+.redirect .redirect-title .redirect-title-content {
+      font-size: 38px;
+      line-height: 44px;
+      font-weight: lighter;
+      font-style: normal;
+      color: #4a4a4d;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #4a4a4d;
+}
+
+/*========================================================== LOGIN SECTION START==========================================================*/
+
+/* ----------------Form Login---------------- */
+.form-login {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+}
+
+.form-login form {
+      width: 1240px;
+      padding: 30px;
+}
+
+/* ----------------Login Label---------------- */
+.form-login .login-label {
+      width: 1240px;
+      font-size: 25px;
+      color: #4a4a4d;
+      padding: 25px 0px 10px 0px;
+}
+
+/* ----------------Login Username---------------- */
+.form-login .login-username {
+      padding-top: 15px;
+      display: flex;
+}
+
+/* ----------------Login Input Username---------------- */
+.form-login .login-input-username #username {
+      width: 1180px;
+      height: 40px;
+      text-indent: 20px;
+      border: 1px solid #4a4a4d;
+      border-radius: 100px !important;
+}
+
+.form-login .login-input-username #username:focus {
+      border: 1px solid #3350fe;
+      border-radius: 100px !important;
+      outline: none;
+}
+
+/* ----------------Login Password---------------- */
+.form-login .login-password {
+      display: flex;
+      padding-top: 15px;
+}
+
+/* ----------------Login Input Password---------------- */
+.form-login .login-input-password #password {
+      width: 1180px;
+      height: 40px;
+      text-indent: 20px;
+      border: 1px solid #4a4a4d;
+      border-radius: 100px !important;
+}
+
+.form-login .login-input-password #password:focus {
+      border: 1px solid #3350fe;
+      border-radius: 100px !important;
+      outline: none;
+}
+
+/* ----------------Check Remember---------------- */
+.form-login .check-remember {
+      padding-top: 15px;
+}
+
+/* ----------------Button Login---------------- */
+.form-login .button-login #login {
+      width: 100px;
+      height: 40px;
+      font-size: 11px;
+      font-weight: bold;
+      border: 1px solid #4a4a4d;
+      border-radius: 100px !important;
+      background-color: white;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+}
+
+.form-login .button-login #login:hover {
+      color: white;
+      border: 1px solid #3350fe;
+      border-radius: 100px !important;
+      background-color: #3350fe;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+}
+
+/* ----------------Lost Password---------------- */
+.form-login .lost-password {
+      padding-top: 15px;
+}
+
+.form-login .lost-password a {
+      text-decoration: none;
+      color: #3350fe;
+}
+
+/*========================================================== LOGIN SECTION END==========================================================*/
+
+
+/*==================================================== LOST PASSWORD SECTION START=======================================================*/
+
+/* ----------------Form Lost Password---------------- */
+.form-lost-password {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+}
+
+.form-lost-password form {
+      width: 1240px;
+      padding: 30px;
+}
+
+/* ----------------Lost Password Instruction---------------- */
+.form-lost-password .lost-password-instruction {
+      font-size: 13px;
+}
+
+/* ----------------Lost Password Username---------------- */
+.form-lost-password .lost-pwd-username {
+      padding-top: 15px;
+      font-size: 13px;
+      padding-left: 15px;
+}
+
+/* ----------------Lost Password Input Username---------------- */
+.form-lost-password .lost-pwd-input-username {
+      padding-left: 15px;
+      padding-top: 10px;
+}
+
+.form-lost-password .lost-pwd-input-username #username {
+      width: 500px;
+      height: 40px;
+      text-indent: 20px;
+      border: 1px solid #4a4a4d;
+      border-radius: 100px !important;
+}
+
+.form-lost-password .lost-pwd-input-username #username:focus {
+      border: 1px solid #3350fe;
+      border-radius: 100px !important;
+      outline: none;
+}
+
+/* ----------------Button Reset---------------- */
+.form-lost-password .button-reset {
+      padding-left: 15px;
+      padding-top: 15px;
+}
+
+.form-lost-password .button-reset #reset {
+      width: 160px;
+      height: 40px;
+      background-color: white;
+      border: 1px solid #4a4a4d;
+      border-radius: 100px !important;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+}
+
+.form-lost-password .button-reset #reset:hover {
+      color: white;
+      background-color: #3350fe;
+      border: 1px solid #3350fe;
+      border-radius: 100px !important;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+}
+
+/*===================================================== LOST PASSWORD SECTION END========================================================*/
+
+/*==================================================== FOOTER SECTION START=======================================================*/
+
+/* ----------------Ft Container---------------- */
+.ft-container {
+      width: 100%;
+      height: 480px;
+      background-color: #212121;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+.ft-container .footer {
+      width: 1240px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 30px 0px 30px;
+}
+
+/* ----------------Product Label, Customer Service Label, Social Label, Customer Care Label---------------- */
+.ft-container .footer .product .product-label,
+.ft-container .footer .custservice .custservice-label,
+.ft-container .footer .social .social-label,
+.ft-container .footer .custcare .custcare-label {
+      color: white;
+      font-weight: 200;
+      padding-bottom: 25px;
+}
+
+/* ----------------Style Content Div Tag---------------- */
+.ft-container .footer .product .product-content div,
+.ft-container .footer .custservice .custservice-content div,
+.ft-container .footer .social .social-content div,
+.ft-container .footer .custcare .custcare-content div {
+      padding-top: 6px;
+      padding-bottom: 6px;
+}
+
+/* ----------------Style <a> Tag---------------- */
+.ft-container .footer a {
+      text-decoration: none;
+      color: #727272;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+}
+
+.ft-container .footer a:hover {
+      text-decoration: none;
+      color: white;
+      font-weight: 300;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+}
+
+/* ----------------Ending / Ending Section---------------- */
+.ft-container .ending {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-top: 100px;
+      border-top: 1px solid #727272;
+            align-items: center;
+                  justify-content: center;
+}
+
+.ft-container .ending .ending-section {
+      width: 1240px;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+/* ----------------Ending Section Disclaimer---------------- */
+.ft-container .ending .ending-section .ending-section-disclaimer {
+      color: #727272;
+      flex-grow: 1;
+      text-align: left;
+}
+
+/* ----------------Ending Section Redirect---------------- */
+.ft-container .ending .ending-section .ending-section-redirect {
+      display: flex;
+      text-align: right;
+}
+
+/* ----------------Ending Section Redirect Button---------------- */
+.ft-container .ending .ending-section .ending-section-redirect i {
+      color: #727272;
+      padding-left: 15px;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+}
+.ft-container .ending .ending-section .ending-section-redirect i:hover {
+      color: white;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+}
+/*==================================================== FOOTER SECTION END=======================================================*/
+

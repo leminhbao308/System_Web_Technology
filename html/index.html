@@ -22,7 +22,7 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&family=Source+Code+Pro:wght@300;600&display=swap"
         rel="stylesheet">
     <!-- Style css -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
@@ -101,16 +101,48 @@
                             </div>
                         </div>
                     </form>
-                    <div class="cart">
+                    <div id="cartID" class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <div class="quantity">
-                            1
+                        <div id="quantity-cart" class="quantity">
+                            0
                         </div>
                         <div class="info">
                             <div class="title">Your Cart</div>
-                            <div class="price">$0.00</div>
+                            <div class="total-price">$0.00</div>
+                        </div>
+                        <div id="popup" class="pop-up">
+                            <div class="content">
+                                <div class="products">
+                                    <div class="left">
+                                        <img src="/images/product03/p4.jpg" alt="">
+                                    </div>
+                                    <div class="right">
+                                        <div class="title">
+                                            <div class="info">
+                                                Apple Macbook
+                                            </div>
+                                            <div  class="exit">
+                                                <i id="close_cart" class='bx bx-x'></i>
+                                            </div>
+                                        </div>
+                                        <div class="money">
+                                            <span class="price"><span class="unit">$</span><span
+                                                    class="num">1,000.00</span></span> x <span class="quantity">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total-price">
+                                    <span class="title">Subtotal:</span> <span class="unit">$</span><span
+                                        class="num">1,000.00</span>
+                                </div>
+                                <div class="control">
+                                    <button id="viewCartInCartPopup" class="btn btn-viewcart">VIEW CART</button>
+                                    <button class="btn btn-checkout">CHECKOUT</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="menu">
                     <ul class="level01">
@@ -620,7 +652,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="wrapper">
         <div class="product03">
             <div class="title">
@@ -731,9 +763,9 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="card">
+                        <div class="card" >
                             <div class="image">
-                                <img src="/images/product03/p4.jpg" alt="">
+                                <img id="card-macbook" src="/images/product03/p4.jpg" alt="">
                             </div>
                             <header>
                                 <div class="title">Apple Macbook, Laptops</div>
@@ -749,7 +781,7 @@
                                 </div>
                             </section>
                             <footer>
-                                <button>ADD TO CART</button>
+                                <button id="btn_addToCart">ADD TO CART</button>
                             </footer>
                             <div class="controls">
                                 <div class="item">
@@ -1262,10 +1294,11 @@
     <div class="newsLetter">
         <div class="wrapper">
             <div class="title">Newsletter Signup</div>
+            <div class="description">
+                Never miss our great deals. Huge sale every week!
+            </div>
         </div>
-        <div class="description">
-            Never miss uor great deals. Huge sale every week!
-        </div>
+        
     </div>
     <footer id="footer">
         <div id="links-list">
@@ -1317,8 +1350,11 @@
         </div>
     </footer>
     <!-- My js -->
+    <!-- header -->
     <script src="/javascript/scrollFixed.js"></script>
-
+    <!-- cart -->
+    <script src="/javascript/cart.js"></script>
+    <!-- slide -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiperProduct1', {
@@ -1328,6 +1364,10 @@
                 disableOnInteraction: false
             },
         });
+        const product = document.getElementById("card-macbook");
+        product.addEventListener('click', () => {
+            window.location.href = "/html/product-detail/index.html";
+        })
     </script>
     <script language="JavaScript">
         var product3 = new Swiper(".slideProduct3", {

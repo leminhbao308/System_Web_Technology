@@ -1,0 +1,276 @@
+:root {
+    --color-blue: #3350fe;
+    --color-price-yellow: #f9db76;
+    --color-price-pink: #fb8aaf;
+    --color-price-original: #8F8F93;
+    --color-bg-footer: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Lepcha', sans-serif;
+    /* font-family: 'Source Code Pro', monospace; */
+}
+
+html {
+    font-size: 16px;
+}
+
+/* ---------------------------------Main--------------------------------- */
+main {
+    width: 100%;
+    margin-top: 150px;
+}
+
+main .wrapper nav {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+main .wrapper nav .nav-item {
+    width: fit-content;
+    font-size: 14px;
+}
+
+main .wrapper nav .nav-item:nth-child(2) {
+    color: var(--color-blue);
+}
+
+main .wrapper .title {
+    font-size: 36px;
+    height: 60px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+main .wrapper .bill_detail {
+    width: 100%;
+    margin-top: 20px;
+}
+
+main .wrapper .bill_detail .header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background: var(--color-blue);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+main .wrapper .bill_detail .header .item {
+    line-height: 60px;
+    color: white;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+main .wrapper .bill_detail .header .item:nth-child(-n + 2) {
+    width: 80px;
+
+}
+
+main .wrapper .bill_detail .header .item:nth-child(3) {
+    width: 300px;
+}
+
+main .wrapper .bill_detail .header .item:nth-child(3) {
+    width: 300px;
+}
+
+main .wrapper .bill_detail .header .item:nth-child(4),
+main .wrapper .bill_detail .header .item:nth-child(6) {
+    width: 220px;
+}
+
+main .wrapper .bill_detail .header .item:nth-child(5) {
+    width: 260px;
+}
+
+main .wrapper .bill_detail .main {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+main .wrapper .bill_detail .main .item {
+    line-height: 80px;
+    padding-left: 10px;
+}
+
+main .wrapper .bill_detail .main .item:nth-child(1) {
+    font-size: 20px;
+}
+
+main .wrapper .bill_detail .main .item:nth-child(2) img {
+    width: 100%;
+}
+
+main .wrapper .bill_detail .main .item:nth-child(-n + 2) {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .wrapper .bill_detail .main .item:nth-child(3) {
+    width: 300px;
+}
+
+main .wrapper .bill_detail .main .item:nth-child(3) {
+    width: 300px;
+}
+
+main .wrapper .bill_detail .main .item:nth-child(4),
+main .wrapper .bill_detail .main .item:nth-child(6) {
+    width: 220px;
+}
+
+main .wrapper .bill_detail .main .item:nth-child(5) {
+    width: 260px;
+}
+
+main .wrapper .bill_detail .main .item:nth-child(5) input {
+    width: 80px;
+    text-align: center;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--color-price-original);
+}
+
+main .wrapper .bill_detail .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 60px;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+main .wrapper .bill_detail .footer .left input {
+    width: 200px;
+    font-size: 15px;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+main .wrapper .bill_detail .footer .left input:focus {
+    border-color: var(--color-blue)
+}
+
+main .wrapper .bill_detail .footer .left button {
+    margin-left: 20px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+main .wrapper .bill_detail .footer .left button:hover {
+    background: var(--color-blue);
+    color: white;
+    cursor: pointer;
+}
+
+main .wrapper .bill_detail .footer .right button {
+    margin-left: 20px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+main .wrapper .bill_detail .footer .right button:hover {
+    background: var(--color-blue);
+    color: white;
+    cursor: pointer;
+}
+
+/* ------------------cart totals---------------- */
+main .wrapper .card_total {
+    margin: 50px 0px;
+    width: 600px;
+}
+
+main .wrapper .card_total .title {
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    height: 40px;
+}
+
+main .wrapper .card_total .card {
+    border: 1px solid rgb(202, 202, 202);
+    width: 100%;
+    border-radius: 20px;
+}
+
+main .wrapper .card_total .card .row {
+    width: 100%;
+    display: flex;
+}
+
+main .wrapper .card_total .card .row:nth-child(1) {
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+main .wrapper .card_total .card .row .col {
+    width: calc(100% / 2);
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+}
+
+main .wrapper .card_total .card .row .col.title {
+    font-weight: 600;
+    padding-left: 30px;
+    display: flex;
+    justify-content: start;
+}
+/* -----------------control------------------- */
+main .wrapper .control {
+    width: 100%;
+}
+
+main .wrapper .control button {
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+    margin-bottom: 20px;
+}
+main .wrapper .control button:hover {
+    background: var(--color-blue);
+    color: white;
+    cursor: pointer;
+}
+/* ----------------RESPONSIVE---------------- */
+
+/* Laptop 15.6 inch max-width: 1920px Full HD */
+@media only screen and (max-width: 1920px) {}
+
+/* Tablet max-width: 1024px*/
+@media only screen and (max-width: 64em) {}
+
+/* Phone  max-width: 600px*/
+@media only screen and (max-width: 37.5em) {}

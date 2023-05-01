@@ -1,0 +1,390 @@
+:root {
+    --color-blue: #3350fe;
+    --color-price-yellow: #f9db76;
+    --color-price-pink: #fb8aaf;
+    --color-price-original: #8F8F93;
+    --color-bg-footer: #212121;
+}
+
+.wrapper {
+    width: 100%;
+    height: fit-content;
+    padding: 0px 26.8%;
+    margin-top: 150px;
+}
+
+/*------------------------- nav------------------------- */
+.wrapper nav {
+    width: 100%;
+    display: flex;
+    margin-top: 230px;
+    gap: 5px;
+}
+
+.wrapper nav .nav-item a {
+    text-decoration: none;
+    color: var(--color-bg-footer);
+    font-size: 16px;
+}
+
+.wrapper nav .nav-item a:hover {
+    color: var(--color-price-original);
+}
+
+.wrapper nav .nav-item.active a {
+    color: var(--color-blue);
+}
+
+/*------------------------- product------------------------- */
+
+.wrapper .product {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+
+/* ---------------peoduct-left------------ */
+.wrapper .product .left {
+    width: 500px;
+}
+
+.wrapper .product .left img {
+    width: 100%;
+    border: 1px solid var(--color-price-original);
+    border-radius: 20px;
+}
+
+/* ---------------peoduct-right------------ */
+.wrapper .product .right {
+    width: 687.84px;
+    padding-left: 20px;
+}
+
+.wrapper .product .right .title {
+    width: 100%;
+    font-size: 36px;
+
+}
+
+.wrapper .product .right .star-rating {
+    width: 100%;
+    height: 13px;
+    margin-top: 6px;
+}
+
+.wrapper .product .right .star-rating img {
+    height: 100%;
+}
+
+.wrapper .product .right .price {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 24px;
+}
+
+.wrapper .product .right .description {
+    font-size: 15px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.wrapper .product .right .control {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    height: 46px;
+}
+
+.wrapper .product .right .control .quantity .quantityProduct {
+    width: 82px;
+    height: 100%;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid var(--color-price-original);
+}
+
+.wrapper .product .right .control .btn-add-to-card .btn {
+    height: 100%;
+    width: 140px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    border: 1px solid var(--color-price-original);
+    background: white;
+}
+
+.wrapper .product .right .control .btn-add-to-card .btn:hover {
+    cursor: pointer;
+    background: var(--color-blue);
+    color: white;
+}
+
+.wrapper .product .right .info {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.wrapper .product .right .info .row {
+    width: 100%;
+    display: flex;
+}
+
+.wrapper .product .right .info .row .col1 {
+    width: 100px;
+    font-size: 14px;
+    color: var(--color-bg-footer);
+}
+
+.wrapper .product .right .info .row .col {
+    color: var(--color-price-original);
+    display: flex;
+    gap: 5px;
+}
+
+.wrapper .product .right .info .row .col a {
+    text-decoration: none;
+    color: var(--color-price-original);
+    transition: 0.25s;
+}
+
+.wrapper .product .right .info .row .col a:hover {
+    color: var(--color-blue);
+}
+
+.wrapper .product .right .info .row.hr {
+    margin-top: 20px;
+}
+
+.wrapper .product .right .info .row>a {
+    color: var(--color-bg-footer);
+    text-decoration: none;
+    transition: 0.25s;
+    font-size: 14px;
+}
+
+.wrapper .product .right .info .row>a:hover {
+    color: var(--color-blue);
+}
+
+/* ---------------------------info-detail---------------------- */
+.wrapper .info-detail {
+    width: 100%;
+    font-size: 14px;
+    color: var(--color-bg-footer);
+    border-bottom: 1px solid var(--color-price-original);
+    padding-bottom: 100px;
+}
+
+.wrapper .info-detail nav {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 100px 0px 50px 0px;
+}
+
+.wrapper .info-detail nav .nav-item {
+    width: max-content;
+}
+
+.wrapper .info-detail nav .nav-item:hover {
+    cursor: pointer;
+    color: var(--color-price-original);
+}
+
+.wrapper .info-detail nav .nav-item:first-child {
+    border-bottom: 2px solid var(--color-blue);
+}
+
+.wrapper .info-detail .description {
+    width: 100%;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.wrapper .info-detail .description ul {
+    width: 100%;
+    margin: 20px 0px;
+    padding-left: 20px;
+}
+
+/* ------------------related-product-------------- */
+.wrapper .related-product {
+    width: 100%;
+    height: 464px;
+}
+
+.wrapper .related-product .title {
+    font-size: 30px;
+    color: var(--color-bg-footer);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.wrapper .related-product .product {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.wrapper .related-product .product .card {
+    width: 261px;
+    height: 100%;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 15px;
+    position: relative;
+}
+
+.wrapper .related-product .product .card:hover {
+    border-color: var(--color-blue);
+    cursor: pointer;
+}
+
+.wrapper .related-product .product .card .image {
+    width: 100%;
+}
+
+.wrapper .related-product .product .card .image img {
+    width: 100%;
+    border-radius: 20px;
+    z-index: 999;
+    position: relative;
+}
+
+.wrapper .related-product .product .card header {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.wrapper .related-product .product .card header .title {
+    font-size: 14px;
+    color: var(--color-blue);
+    margin: 0;
+}
+
+.wrapper .related-product .product .card header .description {
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.wrapper .related-product .product .card header .description:hover {
+    color: var(--color-blue);
+    cursor: pointer;
+}
+
+.wrapper .related-product .product .card section {
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper .related-product .product .card section .price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wrapper .related-product .product .card section .price.sale {
+    color: var(--color-blue);
+}
+
+.wrapper .related-product .product .card section del {
+    color: var(--color-price-original);
+    font-size: 14px;
+}
+
+.wrapper .related-product .product .card section .star-rating {
+    width: 100%;
+}
+
+.wrapper .related-product .product .card section .star-rating img {
+    width: 100px;
+
+}
+
+.wrapper .related-product .product .card footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wrapper .related-product .product .card footer button {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.wrapper .related-product .product .card footer button:hover {
+    background: var(--color-blue);
+    color: white;
+    cursor: pointer;
+}
+
+.wrapper .related-product .product .card .controls {
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    left: 60%;
+    transition: 0.8s ease-in-out;
+    opacity: 0.2;
+}
+
+.wrapper .related-product .product .card:hover .controls {
+    left: 80%;
+    opacity: 1;
+    z-index: 999999999;
+    cursor: pointer;
+}
+
+.wrapper .related-product .product .card .controls .item {
+    width: 100%;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    background: rgb(219, 219, 219);
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .related-product .product .card .controls .item i {
+    font-size: 20px;
+}
+
+
+.wrapper .related-product .product .card .controls .item:hover i {
+    color: var(--color-blue);
+    cursor: pointer;
+}
+
+/* ---wrapper footer --- */
+#footer .cre .wrapper {
+    margin-top: 0;
+}
+
+/* ----------------RESPONSIVE---------------- */
+
+/* Laptop 15.6 inch max-width: 1920px Full HD */
+@media only screen and (max-width: 1920px) {
+    /* ----------- wrapper------------ */
+    .wrapper {
+        padding: 0 19.7%;
+    }
+}
+
+/* Tablet max-width: 1024px*/
+@media only screen and (max-width: 64em) {
+
+}
+
+/* Phone  max-width: 600px*/
+@media only screen and (max-width: 37.5em) {}
