@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Lepcha', sans-serif;
+    /* font-family: 'Source Code Pro', monospace; */
+}
+
+.content {
+    height: 100vh;
+}
+
+.account .avatar {
+    height: 51px;
+}
+
+.account .avatar img {
+    height: 100%;
+    border-radius: 100%;
+}
+
+.data {
+    height: 630px;
+}
