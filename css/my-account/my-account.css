@@ -492,9 +492,10 @@ header nav .menu .level01 {
 /* ----------------Form Lost Password---------------- */
 .form-lost-password {
       width: 100%;
+      height: 409px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       font-size: 15px;
 }
@@ -568,7 +569,7 @@ header nav .menu .level01 {
 /* ----------------Ft Container---------------- */
 .ft-container {
       width: 100%;
-      height: 480px;
+      height: 567px;
       background-color: #212121;
       display: flex;
       flex-direction: column;
