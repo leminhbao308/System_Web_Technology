@@ -2,6 +2,8 @@
       --color-blue: #3350fe;
       --color-price-yellow: #f9db76;
       --color-price-pink: #fb8aaf;
+      --color-price-original: #8F8F93;
+      --color-bg-footer: #212121;
 }
 
 * {
@@ -101,8 +103,17 @@ header .contact .content .account a {
 }
 
 /* ----------------toggle_contact---------------- */
-header .contact .content .toggle_contact {
+/* -----------------toggle account---------------- */
+header .contact .content .toggle_contact,
+header .contact .content .toggle-account {
       display: none;
+      color: var(--color-bg-footer);
+}
+
+header .contact .content .toggle-account i:hover,
+header .contact .content .toggle_contact i:hover {
+      color: var(--color-blue);
+      cursor: pointer;
 }
 
 /* ----------------Navbar---------------- */
@@ -181,13 +192,37 @@ header nav .navbar .search .icon_search {
       border-bottom-right-radius: 30px;
 }
 
+/* ---------Toggle search----------- */
+/* -------Toggle menu----------- */
+header nav .navbar #toggleSearch,
+header nav .navbar .togle-menu {
+      display: none;
+      font-size: 40px;
+}
+
+header nav .navbar #toggleSearch {
+      margin-left: 70%;
+}
+
+/* -------Toggle menu----------- */
+header nav .navbar #toggleSearch i:hover,
+header nav .navbar .togle-menu i:hover {
+      color: var(--color-blue);
+      cursor: pointer;
+}
+
+header nav .navbar .close {
+      font-size: 30px;
+
+      display: none;
+}
+
 header nav .navbar .search i {
       font-size: 0.85em;
       font-weight: bold;
 }
 
 header nav .navbar .search i:hover {
-      color: #3350fe;
       cursor: pointer;
 }
 
@@ -203,8 +238,8 @@ header nav .navbar .cart {
 
 header nav .navbar .cart i {
       height: 100%;
-      width: 20%;
-      font-size: 2.3em;
+      width: 100%;
+      font-size: 50px;
 }
 
 header nav .navbar .cart .quantity {
@@ -345,6 +380,12 @@ header nav .menu .level01 {
       border-bottom: 1px solid var(--color-blue);
       color: var(--color-blue);
 }
+
+
+
+
+
+
 
 /* ----------------Redirect---------------- */
 .redirect {
@@ -492,7 +533,7 @@ header nav .menu .level01 {
 /* ----------------Form Lost Password---------------- */
 .form-lost-password {
       width: 100%;
-      height: 409px;
+      height: 470px;
       display: flex;
       flex-direction: column;
       justify-content: start;
@@ -628,8 +669,8 @@ header nav .menu .level01 {
       flex-direction: row;
       margin-top: 100px;
       border-top: 1px solid #727272;
-            align-items: center;
-                  justify-content: center;
+      align-items: center;
+      justify-content: center;
 }
 
 .ft-container .ending .ending-section {
@@ -660,10 +701,491 @@ header nav .menu .level01 {
       -webkit-transition: 0.2s;
       transition: 0.2s;
 }
+
 .ft-container .ending .ending-section .ending-section-redirect i:hover {
       color: white;
       -webkit-transition: 0.5s;
       transition: 0.5s;
 }
+
 /*==================================================== FOOTER SECTION END=======================================================*/
 
+/* --------------------------responsive------------------- */
+
+/* Laptop 15.6 inch max-width: 1920px Full HD */
+@media only screen and (max-width: 120em) {
+
+      /* Contact */
+      header {
+            width: 100%;
+            /* margin: 0px auto; */
+      }
+
+      header .contact {
+            font-size: 0.79em;
+            height: 40px;
+      }
+
+      .contact .content {
+            max-width: 1340px;
+            width: 100%;
+            height: 100%;
+      }
+
+      /* slide show */
+      .swiper-wrapper .swiper-slide .contents {
+            left: 18.8%;
+      }
+
+      /* service */
+      .container-custom {
+            width: 1180px;
+      }
+
+      /* Card product01 */
+      .card-product01 {
+            padding: 0px 19%
+      }
+
+      .card-product01 .card-item {
+            width: 580px;
+      }
+
+      /* Card sales */
+      .wrapper {
+            padding: 40px 19%;
+      }
+
+      .card-sales .card-item {
+            width: 380px;
+      }
+}
+
+/* ipadd pro max-width: 1024px*/
+@media only screen and (max-width: 64em) {
+
+      /* Contact */
+      header .contact {
+            width: 100%;
+            /* height: 260px; */
+
+      }
+
+      header .contact .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+
+      }
+
+      header .contact .content .account {
+            width: 100%;
+            display: none;
+            flex-direction: column;
+            /* justify-content: center; */
+            padding: 10px 0;
+            gap: 10px;
+            margin: 20px 0px;
+            background: var(--color-bg-footer);
+
+      }
+
+      header .contact .content .account li {
+            width: 100%;
+            text-align: center;
+            height: 30px;
+      }
+
+      header .contact .content .account li a {
+            color: white;
+      }
+
+      header .contact .content .account li a:hover {
+            color: var(--color-price-original)
+      }
+
+      header .contact .content .toggle-account {
+            width: 100%;
+            display: none;
+            justify-content: center;
+            font-size: 24px;
+            height: 30px;
+            margin-top: 30px;
+      }
+
+      header .contact .content .info {
+            width: 100%;
+            height: 50px;
+            display: none;
+            justify-content: center;
+            padding: 0;
+            transition: 2s;
+      }
+
+      header .contact .content .toggle_contact {
+            width: 100%;
+            height: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+      }
+
+      /* ----------------Navbar---------------- */
+      header nav .navbar {
+            width: 1024px;
+            padding: 0px 20px;
+      }
+
+      /* Menu level 01 */
+      header nav .menu .level01 {
+            width: 1024px;
+            height: 100%;
+            padding: 0px 20px;
+            display: flex;
+            list-style-type: none;
+            gap: 2em;
+            align-items: center;
+      }
+
+
+
+      header nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+      }
+
+      /* ----------------NarBar -> logo + search + cart---------------- */
+      header nav .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+      }
+
+      /* ----------------Logo---------------- */
+      header nav .navbar .logo {
+            height: 40px;
+      }
+
+      header nav .navbar .logo img {
+            height: 100%;
+      }
+
+      /* ----------------search  and category---------------- */
+      header nav .navbar form {
+            width: 100%;
+            height: 100vh;
+            background: var(--color-blue);
+            display: none;
+            position: absolute;
+            left: 0;
+            top: -40px;
+            z-index: 99999;
+            opacity: 0.95;
+      }
+
+      header nav .navbar .search {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            border: 2px solid #3350fe;
+            border-radius: 30px;
+            flex-direction: column;
+            position: relative;
+            margin-top: 500px;
+      }
+
+      header nav .navbar .search select {
+            margin: 20px auto;
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid white;
+            border-top-left-radius: unset;
+            border-bottom-left-radius: unset;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            outline: none;
+      }
+
+      header nav .navbar .search select option {
+            color: black;
+      }
+
+      header nav .navbar .search select:hover {
+            cursor: pointer;
+      }
+
+      header nav .navbar .search input {
+            margin-left: 200px;
+            width: 60%;
+            height: 50px;
+            outline: none;
+            border: none;
+            border: 1px solid white;
+            background: none;
+            padding: 20px;
+            color: white;
+      }
+
+
+      header nav .navbar .search .icon_search {
+            width: 60px;
+            background: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            padding: 20px;
+            color: white;
+            position: absolute;
+            top: 20px;
+            right: 150px;
+            font-size: 24px;
+      }
+
+      header nav .navbar .search .icon_search:hover .fa-solid.fa-magnifying-glass {
+            color: var(--color-price-original)
+      }
+
+      header nav .navbar .close {
+            display: block;
+            top: 30px;
+            position: absolute;
+            right: 30px;
+      }
+
+      header nav .navbar .close:hover {
+            color: white;
+            cursor: pointer;
+      }
+
+      /* -------Toggle menu----------- */
+      header nav .navbar #toggleSearch,
+      header nav .navbar .togle-menu {
+            display: flex;
+
+      }
+
+      header nav .navbar .search i {
+            font-size: 0.85em;
+            font-weight: bold;
+      }
+
+      header nav .navbar .search i:hover {
+            color: #3350fe;
+            cursor: pointer;
+      }
+
+      /* ----------------Cart shopping---------------- */
+      header nav .navbar .cart {
+            width: 60px;
+      }
+
+      header nav .navbar .cart i {
+            height: 100%;
+            width: 20%;
+      }
+
+
+      header nav .navbar .cart:hover .quantity {
+            background: black;
+      }
+
+      header nav .navbar .cart .info {
+            display: none;
+      }
+
+
+      /* ----------------Menu---------------- */
+      header nav .menu {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            position: unset;
+            display: none;
+      }
+
+      /* ---------Level 01------------ */
+      header nav .menu .level01 {
+            width: 1024px;
+            height: auto;
+            flex-direction: column;
+            gap: 10px;
+            position: unset;
+      }
+
+      .menu .level01 li {
+            width: 100%;
+            height: 30px;
+            position: unset;
+      }
+
+      .menu .level01 li a {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            display: flex;
+            justify-content: space-between;
+      }
+
+      .menu .level01 li:hover>a {
+            color: var(--color-blue);
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            display: flex;
+            justify-content: space-between;
+      }
+
+      /* ---------Level 02------------ */
+      .menu .level01 .level02 {
+            all: unset;
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            height: 200px;
+      }
+
+      .menu .level01 li:hover .level02 {
+            all: unset;
+            display: none;
+      }
+
+      .menu .level01 li:hover .level02.ver1 {
+            all: unset;
+            display: none;
+      }
+
+      .menu .level01 .level02 li {
+            position: unset;
+            width: 100%;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+      }
+
+      /* content */
+      /* ----------------Redirect Center---------------- */
+      .redirect .redirect-center {
+            width: 1024px;
+            font-size: 14px;
+            padding: 20px 20px 10px 20px;
+      }
+
+      /* ----------------Redirect Title---------------- */
+      .redirect .redirect-title {
+            width: 1024px;
+            padding: 0 20px;
+      }
+
+      .redirect .redirect-title-content {
+            font-size: 36px;
+      }
+
+      /* ----------------Form Login---------------- */
+      .form-login {
+            width: 100%;
+            font-size: 15px;
+      }
+
+      .form-login form {
+            width: 1024px;
+            padding: 20px;
+      }
+
+      /* ----------------Login Label---------------- */
+      .form-login .login-label {
+            width: 1024px;
+            font-size: 28px;
+
+      }
+
+      /* ----------------Login Input Username---------------- */
+      .form-login .login-input-username #username {
+            width: 100%;
+      }
+
+
+      /* ----------------Login Input Password---------------- */
+      .form-login .login-input-password #password {
+            width: 100%;
+      }
+
+      /* -------------------------Footer--------------- */
+      .ft-container {
+            margin-top: 200px;
+            width: 100%;
+            height: 500px;
+            background-color: #212121;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .ft-container .footer {
+            width: 1024px;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 30px 0px 30px;
+      }
+
+      /* ----------------Product Label, Customer Service Label, Social Label, Customer Care Label---------------- */
+      .ft-container .footer .product .product-label,
+      .ft-container .footer .custservice .custservice-label,
+      .ft-container .footer .social .social-label,
+      .ft-container .footer .custcare .custcare-label {
+            color: white;
+            font-weight: 200;
+            padding-bottom: 25px;
+            height: 50px;
+      }
+
+      /* ----------------Style Content Div Tag---------------- */
+      .ft-container .footer .product .product-content div,
+      .ft-container .footer .custservice .custservice-content div,
+      .ft-container .footer .social .social-content div,
+      .ft-container .footer .custcare .custcare-content div {
+            padding-top: 6px;
+            padding-bottom: 6px;
+            height: 30px;
+      }
+
+      /* ----------------Ending / Ending Section---------------- */
+      .ft-container .ending {
+            width: 100%;
+            height: 50px;
+      }
+
+      .ft-container .ending .ending-section {
+            width: 1024px;
+      }
+
+      /* -----------------lost Your password--------------- */
+
+      .form-lost-password {
+            width: 100%;
+      }
+
+      .form-lost-password form {
+            width: 1024px;
+            padding: 20px;
+      }
+
+
+
+
+}
+
+/* Phone  max-width: 600px*/
+@media only screen and (max-width: 37.5em) {}
