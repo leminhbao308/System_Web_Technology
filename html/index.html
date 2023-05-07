@@ -33,18 +33,21 @@
             <!-- Contact -->
             <div id="contactID" class="contact">
                 <div class="content">
-                    <ul class="info">
+                    <div id="toggle-down" class="toggle_contact">
+                        <i id="down" class='bx bx-chevron-down'></i>
+                    </div>
+                    <ul id="show-info" class="info">
                         <li>Welcome to Devicer</li>
                         <li><span>Customer Care</span></li>
                         <li><a href="#">1-800-123-4567</a></li>
                     </ul>
-                    <ul class="account">
+                    <ul id="show-account" class="account">
                         <li><a href="/html/my-account/signup.html">Sign Up</a></li>
                         <li><a href="/html/my-account/login.html">Log in</a></li>
                         <li><a href="#">My List</a></li>
                     </ul>
-                    <div class="toggle_contact">
-                        <i class="fa-solid fa-angle-down"></i>
+                    <div id="login" class="toggle-login">
+                        <i id="show-menu" class='bx bx-menu'></i>
                     </div>
                 </div>
             </div>
@@ -55,7 +58,7 @@
                         <a href="#"><img src="/images/logo/device-home-1-logo.png" alt="logo Devicer"
                                 title="Devicer"></a>
                     </div>
-                    <form action="#">
+                    <form id="formSearch" action="#">
                         <div class="search">
                             <select name="categories" id="categories">
                                 <option value="allCategories">All Categories</option>
@@ -100,7 +103,13 @@
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                         </div>
+                        <div id="toggleCloseSearch" class="close">
+                            <i id="closeSearch" class="bx bx-x"></i>
+                        </div>
                     </form>
+                    <div id="toggleSearch" class="icon_search">
+                        <i id="showFormSearch" class='bx bx-search'></i>
+                    </div>
                     <div id="cartID" class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <div id="quantity-cart" class="quantity">
@@ -121,7 +130,7 @@
                                             <div class="info">
                                                 Apple Macbook
                                             </div>
-                                            <div  class="exit">
+                                            <div class="exit">
                                                 <i id="close_cart" class='bx bx-x'></i>
                                             </div>
                                         </div>
@@ -142,9 +151,11 @@
                             </div>
                         </div>
                     </div>
-
+                    <div id="showMenu" class="togle-menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
                 </div>
-                <div class="menu">
+                <div id="navMenu" class="menu">
                     <ul class="level01">
                         <li><a href="/html/index.html">Home <i class="fa-solid fa-angle-down"></i></a></li>
                         <li><a href="#">Features <i class="fa-solid fa-angle-down"></i></a>
@@ -763,7 +774,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="card" >
+                        <div class="card">
                             <div class="image">
                                 <img id="card-macbook" src="/images/product03/p4.jpg" alt="">
                             </div>
@@ -1298,7 +1309,7 @@
                 Never miss our great deals. Huge sale every week!
             </div>
         </div>
-        
+
     </div>
     <footer id="footer">
         <div id="links-list">
@@ -1350,6 +1361,8 @@
         </div>
     </footer>
     <!-- My js -->
+    <!-- responsive -->
+    <script src="/javascript/responsiveHeader.js"></script>
     <!-- header -->
     <script src="/javascript/scrollFixed.js"></script>
     <!-- cart -->
