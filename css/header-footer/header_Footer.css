@@ -101,7 +101,8 @@ header .contact .content .account a {
     font-weight: 530;
 }
 
-/* ----------------toggle_contact---------------- */
+/* ----------------toggle_contact + toggle-login---------------- */
+header .contact .content .toggle-login,
 header .contact .content .toggle_contact {
     display: none;
 }
@@ -187,6 +188,10 @@ header nav .navbar .search .icon_search {
     border-bottom-right-radius: 30px;
 }
 
+header nav .navbar form .close {
+    display: none;
+}
+
 header nav .navbar .search i {
     font-size: 0.85em;
     font-weight: bold;
@@ -195,6 +200,11 @@ header nav .navbar .search i {
 header nav .navbar .search i:hover {
     color: #3350fe;
     cursor: pointer;
+}
+
+header nav .navbar #showMenu,
+header nav .navbar #toggleSearch {
+    display: none;
 }
 
 /* ----------------Cart shopping---------------- */
@@ -607,6 +617,7 @@ header nav .menu .level01 {
         max-width: 1160px;
         width: 100%;
     }
+
     /* ----------- wrapper------------ */
     .wrapper {
         width: 100%;
@@ -625,19 +636,285 @@ header nav .menu .level01 {
 
     /* Contact */
     header .contact {
-        height: 34px;
+        width: 100%;
+        height: fit-content;
     }
 
-    header .contact .content .info,
-    header .contact .content .account {
-        display: none;
+    header .contact .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
     }
 
+    header .contact .content .toggle-login,
+    header .contact .content ul.info,
+    header .contact .content ul.account,
     header .contact .content .toggle_contact {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 40px;
+    }
+
+    header .contact .content .toggle-login,
+    header .contact .content .toggle_contact {
+        font-size: 24px;
+    }
+
+    header .contact .content ul.info {
+        display: none;
+    }
+
+    header .contact .content ul.account {
+        height: 120px;
+        display: none;
+        flex-direction: column;
+        gap: unset;
+        background: var(--color-bg-footer);
+
+    }
+
+    header .contact .content ul.account>li {
+        width: 100%;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    header .contact .content ul.account>li a {
+        color: white;
+    }
+
+    header .contact .content .toggle-login {
+        display: none;
+    }
+
+    /* logo search  cart*/
+    header nav {
+        position: relative;
+        box-shadow: unset;
+    }
+
+    /* ----------------NarBar -> logo + search + cart---------------- */
+    header nav .navbar {
+        width: 1024px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: start;
+    }
+
+    header nav .navbar form {
+        width: 100%;
+        height: 100vh;
+        background: var(--color-blue);
+        display: none;
+        position: absolute;
+        left: 0;
+        top: -40px;
+        z-index: 999999999;
+        opacity: 0.95;
+       
+    }
+
+    header nav .navbar form .search {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        border: 2px solid #3350fe;
+        border-radius: 30px;
+        flex-direction: column;
+        position: relative;
+        margin-top: 500px;
+    }
+
+    header nav .navbar form .search select {
+        margin: 20px auto;
+        width: 200px;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid white;
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        outline: none;
+    }
+
+    header nav .navbar form .search select option {
+        color: black;
+    }
+
+    header nav .navbar form .search select:hover {
+        cursor: pointer;
+    }
+
+    header nav .navbar form .search input {
+        margin-left: 200px;
+        width: 60%;
+        height: 50px;
+        outline: none;
+        border: none;
+        border: 1px solid white;
+        background: none;
+        padding: 20px;
+        color: white;
+    }
+
+
+    header nav .navbar form .search .icon_search {
+        width: 60px;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 20px;
+        color: white;
+        position: absolute;
+        top: 20px;
+        right: 150px;
+        font-size: 24px;
+    }
+
+    header nav .navbar form .search .icon_search:hover .fa-solid.fa-magnifying-glass {
+        color: var(--color-price-original)
+    }
+
+    
+    header nav .navbar #toggleSearch {
+        margin-left: 70%;
+    }
+
+    /* close search */
+    header nav .navbar form .close {
+        display: block;
+        top: 30px;
+        position: absolute;
+        right: 30px;
+        font-size: 24px;
+    }
+
+    header nav .navbar form .close:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    header nav .navbar #showMenu,
+    header nav .navbar #toggleSearch {
+        display: block;
+        font-size: 28px;
+    }
+
+    header nav .navbar #showMenu:hover,
+    header nav .navbar #toggleSearch:hover {
+        color: var(--color-blue);
+        cursor: pointer;
+    }
+
+    /* cart */
+
+    header nav .navbar .cart {
+        width: max-content;
+        height: fit-content;
+        margin: 0px 20px;
+    }
+
+    header nav .navbar .cart .info {
+        display: none;
+    }
+
+    /* nav menu */
+
+    /* ----------------Menu---------------- */
+    header nav .menu {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        position: unset;
+        display: none;
+        padding: 0px 20px;
+    }
+
+    /* ---------Level 01------------ */
+    header nav .menu .level01 {
+        width: 1024px;
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        position: unset;
+    }
+
+    .menu .level01 li {
+        width: 100%;
+        height: 30px;
+        position: unset;
+    }
+
+    .menu .level01 li a {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu .level01 li:hover>a {
+        color: var(--color-blue);
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* ---------Level 02------------ */
+    .menu .level01 .level02 {
+        all: unset;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+    }
+
+    .menu .level01 li:hover .level02 {
+        all: unset;
+        display: none;
+    }
+
+    .menu .level01 li:hover .level02.ver1 {
+        all: unset;
+        display: none;
+    }
+
+    .menu .level01 .level02 li {
+        position: unset;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: fit-content;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start
+    }
+
+    #footer #links-list .wrapper {
+        width: 100%;
+        height: 385px;
+        border-bottom: 1px solid rgb(91, 91, 91);
+        display: flex;
+        flex-direction: row;
     }
 }
 

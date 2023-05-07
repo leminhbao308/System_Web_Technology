@@ -36,17 +36,22 @@
             <!-- Contact -->
             <div id="contactID" class="contact">
                 <div class="content">
-                    <ul class="info">
+                    <div id="toggle-down" class="toggle_contact">
+                        <i id="down" class='bx bx-chevron-down'></i>
+                    </div>
+                    <ul id="show-info" class="info">
                         <li>Welcome to Devicer</li>
                         <li><span>Customer Care</span></li>
                         <li><a href="#">1-800-123-4567</a></li>
                     </ul>
-                    <ul class="account">
+                    <ul id="show-account" class="account">
                         <li><a href="/html/my-account/signup.html">Sign Up</a></li>
                         <li><a href="/html/my-account/login.html">Log in</a></li>
                         <li><a href="#">My List</a></li>
                     </ul>
-                    
+                    <div id="login" class="toggle-login">
+                        <i id="show-menu" class='bx bx-menu'></i>
+                    </div>
                 </div>
             </div>
             <!-- Navbar -->
@@ -56,7 +61,7 @@
                         <a href="/html/index.html"><img src="/images/logo/device-home-1-logo.png" alt="logo Devicer"
                                 title="Devicer"></a>
                     </div>
-                    <form action="#">
+                    <form id="formSearch" action="#">
                         <div class="search">
                             <select name="categories" id="categories">
                                 <option value="allCategories">All Categories</option>
@@ -101,7 +106,13 @@
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                         </div>
+                        <div id="toggleCloseSearch" class="close">
+                            <i id="closeSearch" class="bx bx-x"></i>
+                        </div>
                     </form>
+                    <div id="toggleSearch" class="icon_search">
+                        <i id="showFormSearch" class='bx bx-search'></i>
+                    </div>
                     <div id="cartID" class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <div id="quantity-cart" class="quantity">
@@ -122,7 +133,7 @@
                                             <div class="info">
                                                 Apple Macbook
                                             </div>
-                                            <div  class="exit">
+                                            <div class="exit">
                                                 <i id="close_cart" class='bx bx-x'></i>
                                             </div>
                                         </div>
@@ -137,14 +148,17 @@
                                         class="num">1,000.00</span>
                                 </div>
                                 <div class="control">
-                                    <button id="viewCartInCartPopup" class="btn btn-viewcart">VIEW CART</button>
+                                    <button class="btn btn-viewcart">VIEW CART</button>
                                     <button class="btn btn-checkout">CHECKOUT</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div id="showMenu" class="togle-menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
                 </div>
-                <div class="menu">
+                <div id="navMenu" class="menu">
                     <ul class="level01">
                         <li><a href="/html/index.html">Home <i class="fa-solid fa-angle-down"></i></a></li>
                         <li><a href="#">Features <i class="fa-solid fa-angle-down"></i></a>
@@ -265,7 +279,7 @@
                 </div>
                 <div class="control">
                     <div class="quantity">
-                        <input type="number" class="quantityProduct" value="1"  min="1" step="1">
+                        <input type="number" class="quantityProduct" value="1" min="1" step="1">
                     </div>
                     <div class="btn-add-to-card">
                         <button id="btn_addToCart" class="btn">ADD TO CART</button>
@@ -455,6 +469,8 @@
                 </div>
             </div>
         </div>
+        <button id="btn_addToCart" style="display: none"></button>
+        <button id="viewCartInCartPopup" style="display: none"></button>
     </section>
     <footer id="footer">
         <div id="links-list">
@@ -510,6 +526,8 @@
     <!-- Cart -->
     <script src="/javascript/cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- responsive header -->
+    <script src="/javascript/responsiveHeader.js"></script>
 </body>
 
 </html>

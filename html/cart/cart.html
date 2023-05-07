@@ -35,18 +35,21 @@
             <!-- Contact -->
             <div id="contactID" class="contact">
                 <div class="content">
-                    <ul class="info">
+                    <div id="toggle-down" class="toggle_contact">
+                        <i id="down" class='bx bx-chevron-down'></i>
+                    </div>
+                    <ul id="show-info" class="info">
                         <li>Welcome to Devicer</li>
                         <li><span>Customer Care</span></li>
                         <li><a href="#">1-800-123-4567</a></li>
                     </ul>
-                    <ul class="account">
+                    <ul id="show-account" class="account">
                         <li><a href="/html/my-account/signup.html">Sign Up</a></li>
                         <li><a href="/html/my-account/login.html">Log in</a></li>
                         <li><a href="#">My List</a></li>
                     </ul>
-                    <div class="toggle_contact">
-                        <i class="fa-solid fa-angle-down"></i>
+                    <div id="login" class="toggle-login">
+                        <i id="show-menu" class='bx bx-menu'></i>
                     </div>
                 </div>
             </div>
@@ -57,7 +60,7 @@
                         <a href="/html/index.html"><img src="/images/logo/device-home-1-logo.png" alt="logo Devicer"
                                 title="Devicer"></a>
                     </div>
-                    <form action="#">
+                    <form id="formSearch" action="#">
                         <div class="search">
                             <select name="categories" id="categories">
                                 <option value="allCategories">All Categories</option>
@@ -102,7 +105,13 @@
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                         </div>
+                        <div id="toggleCloseSearch" class="close">
+                            <i id="closeSearch" class="bx bx-x"></i>
+                        </div>
                     </form>
+                    <div id="toggleSearch" class="icon_search">
+                        <i id="showFormSearch" class='bx bx-search'></i>
+                    </div>
                     <div id="cartID" class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <div id="quantity-cart" class="quantity">
@@ -144,9 +153,11 @@
                             </div>
                         </div>
                     </div>
-
+                    <div id="showMenu" class="togle-menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
                 </div>
-                <div class="menu">
+                <div id="navMenu" class="menu">
                     <ul class="level01">
                         <li><a href="/html/index.html">Home <i class="fa-solid fa-angle-down"></i></a></li>
                         <li><a href="#">Features <i class="fa-solid fa-angle-down"></i></a>
@@ -245,17 +256,17 @@
                     <div class="item"></div>
                     <div class="item"></div>
                     <div class="item">Product</div>
-                    <div class="item">Price</div> 
+                    <div class="item">Price</div>
                     <div class="item">Quantity</div>
-                    <div class="item">Subtotal</div> 
+                    <div class="item">Subtotal</div>
                 </div>
                 <div class="main">
                     <div class="item"><i id="close_cart" class='bx bx-x'></i></div>
                     <div class="item"><img src="/images/product03/p4.jpg" alt=""></div>
                     <div class="item">Apple Macbook</div>
-                    <div class="item">$1,000.00</div> 
+                    <div class="item">$1,000.00</div>
                     <div class="item"><input type="number" class="quantityProductCart" value="1"></div>
-                    <div class="item">$1,000.00</div> 
+                    <div class="item">$1,000.00</div>
                 </div>
                 <div class="footer">
                     <div class="left">
@@ -288,6 +299,8 @@
                 </button>
             </div>
         </div>
+        <button id="btn_addToCart" style="display: none"></button>
+        <button id="viewCartInCartPopup" style="display: none"></button>
     </main>
     <!-- Footer -->
     <footer id="footer">
@@ -344,6 +357,8 @@
     <script src="/javascript/scrollFixed.js"></script>
     <!-- cart -->
     <script src="/javascript/cart.js"></script>
+    <!-- Responsive header-->
+    <script src="/javascript/responsiveHeader.js"></script>
 </body>
 
 </html>

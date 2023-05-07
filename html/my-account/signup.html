@@ -30,21 +30,25 @@
       <div class="container">
             <header class="header">
                   <!-- Contact -->
-                  <div class="contact">
+                  <div id="content-contact" class="contact">
                         <div class="content">
-                              <div class="toggle_contact">
-                                    <i class="fa-solid fa-angle-down"></i>
+                              <div class="toggle_contact" id="toggle-arrow">
+                                    <i id="down" class='bx bx-chevron-down'></i>
+
                               </div>
-                              <ul class="info">
+                              <ul id="show-info" class="info">
                                     <li>Welcome to Devicer</li>
                                     <li><span>Customer Care</span></li>
                                     <li><a href="#">1-800-123-4567</a></li>
                               </ul>
-                              <ul class="account">
+                              <ul id="show-account" class="account">
                                     <li><a href="/html/my-account/signup.html">Sign Up</a></li>
                                     <li><a href="/html/my-account/login.html">Log in</a></li>
                                     <li><a href="#">My List</a></li>
                               </ul>
+                              <div id="account" class="toggle-account">
+                                    <i id="show-menu" class='bx bx-menu'></i>
+                              </div>
 
                         </div>
                   </div>
@@ -55,7 +59,8 @@
                                     <a href="/html/index.html"><img src="/images/logo/device-home-1-logo.png"
                                                 alt="logo Devicer" title="Devicer"></a>
                               </div>
-                              <form action="#">
+
+                              <form id="formSearch" action="#">
                                     <div class="search">
                                           <select name="categories" id="categories">
                                                 <option value="allCategories">All Categories</option>
@@ -101,9 +106,16 @@
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                           </div>
                                     </div>
+                                    <div class="close">
+                                          <i id="closeSearch" class="bx bx-x"></i>
+                                    </div>
                               </form>
+                              <div id="toggleSearch" class="icon_search">
+                                    <i id="showFormSearch" class='bx bx-search'></i>
+                              </div>
+
                               <div class="cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class='bx bx-cart-alt'></i>
                                     <div class="quantity">
                                           0
                                     </div>
@@ -112,8 +124,11 @@
                                           <div class="price">$0.00</div>
                                     </div>
                               </div>
+                              <div id="showMenu" class="togle-menu">
+                                    <i class='bx bx-menu'></i>
+                              </div>
                         </div>
-                        <div class="menu">
+                        <div id="navMenu" class="menu">
                               <ul class="level01">
                                     <li><a href="/html/index.html">Home <i class="fa-solid fa-angle-down"></i></a></li>
                                     <li><a href="#">Features <i class="fa-solid fa-angle-down"></i></a>
@@ -310,6 +325,7 @@
                   </div>
             </div>
       </div>
+      <script src=" /javascript/responsive.js"></script>
 </body>
 
 </html>
