@@ -59,7 +59,7 @@ header .contact a {
 }
 
 header .contact a:hover {
-    color: #3350fe;
+    color: var(--color-blue);
 }
 
 /* ----------------Contact -> Info---------------- */
