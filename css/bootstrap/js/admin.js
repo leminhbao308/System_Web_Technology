@@ -161,3 +161,15 @@ $('.btn-prev').on('click', () => {
 });
 
 
+const toggleShowSidebar = document.getElementById('toggleShowSidebar') 
+toggleShowSidebar.addEventListener('click', () => {
+    const showMenu = document.getElementById('showMenu')
+    showMenu.style.left = 0;
+})
+
+
+const closeSideBar = document.getElementById("closeSideBar")
+closeSideBar.addEventListener('click', () => {
+    const showMenu = document.getElementById('showMenu')
+    showMenu.style.left = "-330px";
+})

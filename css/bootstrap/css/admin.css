@@ -22,3 +22,55 @@
 .data {
     height: 630px;
 }
+
+.toggle-Menu {
+    display: none;
+}
+
+#toggleClose i {
+    display: none;
+}
+
+/* Laptop 15.6 inch max-width: 1920px Full HD */
+@media only screen and (max-width: 1920px) {}
+
+/* Tablet max-width: 1024px*/
+@media only screen and (max-width: 64em) {
+    .content {
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+
+    .side-bar {
+        width: 330px;
+        height: 100vh;
+        position: absolute;
+        z-index: 1;
+        left: -330px;
+        transition: 0.24s
+    }
+
+    .showData {
+        width: 100%;
+    }
+
+    .toggle-Menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #toggleClose {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #toggleClose i {
+        display: flex;
+    }
+}
+
+/* Phone  max-width: 600px*/
+@media only screen and (max-width: 37.5em) {}
