@@ -879,9 +879,9 @@ header nav .menu .level01 {
             height: 100vh;
             background: var(--color-blue);
             display: none;
-            position: absolute;
+            position: fixed;
             left: 0;
-            top: -40px;
+            top: 0px;
             z-index: 99999;
             opacity: 0.95;
       }

@@ -21,7 +21,11 @@ html {
 /* ---------------------------------Main--------------------------------- */
 main {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 150px;
+}
+
+main .wrapper {
+    height: 720px;
 }
 
 main .wrapper nav {
@@ -246,6 +250,7 @@ main .wrapper .card_total .card .row .col.title {
     display: flex;
     justify-content: start;
 }
+
 /* -----------------control------------------- */
 main .wrapper .control {
     width: 100%;
@@ -257,20 +262,37 @@ main .wrapper .control button {
     border-radius: 10px;
     border: 1px solid grey;
     outline: none;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
+
 main .wrapper .control button:hover {
     background: var(--color-blue);
     color: white;
     cursor: pointer;
 }
+
 /* ----------------RESPONSIVE---------------- */
 
 /* Laptop 15.6 inch max-width: 1920px Full HD */
 @media only screen and (max-width: 1920px) {}
 
 /* Tablet max-width: 1024px*/
-@media only screen and (max-width: 64em) {}
+@media only screen and (max-width: 64em) {
+
+    main {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    main .wrapper .control button {
+        height: 40px;
+        padding: 0 10px;
+        border-radius: 10px;
+        border: 1px solid grey;
+        outline: none;
+        margin-bottom: 100px;
+    }
+}
 
 /* Phone  max-width: 600px*/
 @media only screen and (max-width: 37.5em) {}
