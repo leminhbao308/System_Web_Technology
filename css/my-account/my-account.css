@@ -1199,37 +1199,36 @@ header nav .menu .level01 {
 
       /* ----------------NarBar -> logo + search + cart---------------- */
       header nav .navbar {
+            all: unset;
             width: 412px;
-            padding: 0 20px;
             display: grid;
+            padding: 0;
             grid-template: auto auto auto;
             text-align: center;
             row-gap: 20px;
             position: relative;
       }
 
-
       header nav .navbar .logo {
             width: 412px;
             grid-column-start: 1;
             grid-column-end: 4;
-            padding-right: 40px;
+            padding-right: 0px;
       }
-
 
       header nav .navbar #showMenu,
       header nav .navbar #toggleSearch {
             display: block;
       }
 
-
       header nav .navbar #toggleSearch {
             text-align: left;
+            padding-left: 20px;
             margin-left: 0;
       }
 
       header nav .navbar #showMenu {
-            padding-right: 40px;
+            padding-right: 20px;
             text-align: right;
       }
 

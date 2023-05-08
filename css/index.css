@@ -2536,9 +2536,10 @@ header nav .menu .level01 {
 
     /* ----------------NarBar -> logo + search + cart---------------- */
     header nav .navbar {
-        width: 100%;
-        padding: 0 20px;
+        all: unset;
+        width: 412px;
         display: grid;
+        padding: 0;
         grid-template: auto auto auto;
         text-align: center;
         row-gap: 20px;
@@ -2549,7 +2550,7 @@ header nav .menu .level01 {
         width: 412px;
         grid-column-start: 1;
         grid-column-end: 4;
-        padding-right: 40px;
+        padding-right: 0px;
     }
 
     header nav .navbar #showMenu,
@@ -2559,11 +2560,12 @@ header nav .menu .level01 {
 
     header nav .navbar #toggleSearch {
         text-align: left;
+        padding-left: 20px;
         margin-left: 0;
     }
 
     header nav .navbar #showMenu {
-        padding-right: 40px;
+        padding-right: 20px;
         text-align: right;
     }
 
@@ -2780,12 +2782,29 @@ header nav .menu .level01 {
 
     .wrapper .product02 .product .card {
         width: 100%;
-        height: 580px
+        height: 580px;
+        box-shadow: unset;
     }
 
     .wrapper .product02 .product .card footer {
         margin-top: 30px;
     }
+
+    .product02 .product .card {
+        position: relative;
+    }
+
+    .product02 .product .card .controls,
+    .product02 .product .card:hover .controls {
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        transition: unset;
+        opacity: 1;
+        z-index: 999999;
+    }
+
 
     /* deal */
 
@@ -2962,8 +2981,9 @@ header nav .menu .level01 {
         height: fit-content;
         flex-direction: column-reverse;
         text-align: center;
-       
+
     }
+
     #footer .cre .wrapper .col2 {
         width: 100%;
     }
