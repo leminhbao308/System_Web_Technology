@@ -834,6 +834,8 @@ header nav .menu .level01 {
       header nav .navbar {
             width: 1024px;
             padding: 0px 20px;
+            display: flex;
+            justify-content: start;
       }
 
       /* Menu level 01 */
@@ -857,12 +859,12 @@ header nav .menu .level01 {
             position: relative;
       }
 
-      /* ----------------NarBar -> logo + search + cart---------------- */
+      /* ----------------NarBar -> logo + search + cart----------------
       header nav .navbar {
             width: 100%;
             display: flex;
             justify-content: start;
-      }
+      } */
 
       /* ----------------Logo---------------- */
       header nav .navbar .logo {
@@ -1187,4 +1189,203 @@ header nav .menu .level01 {
 }
 
 /* Phone  max-width: 600px*/
-@media only screen and (max-width: 37.5em) {}
+@media only screen and (max-width: 412px) {
+
+      /* logo search  cart*/
+      header nav {
+            position: relative;
+            box-shadow: unset;
+      }
+
+      /* ----------------NarBar -> logo + search + cart---------------- */
+      header nav .navbar {
+            width: 412px;
+            padding: 0 20px;
+            display: grid;
+            grid-template: auto auto auto;
+            text-align: center;
+            row-gap: 20px;
+            position: relative;
+      }
+
+
+      header nav .navbar .logo {
+            width: 412px;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            padding-right: 40px;
+      }
+
+
+      header nav .navbar #showMenu,
+      header nav .navbar #toggleSearch {
+            display: block;
+      }
+
+
+      header nav .navbar #toggleSearch {
+            text-align: left;
+            margin-left: 0;
+      }
+
+      header nav .navbar #showMenu {
+            padding-right: 40px;
+            text-align: right;
+      }
+
+      /* ----------------NarBar -> logo + search + cart---------------- */
+
+      header nav .navbar form {
+            width: 412px;
+            height: 100vh;
+            background: var(--color-blue);
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0px;
+            z-index: 99999;
+            opacity: 0.95;
+      }
+
+      header nav .navbar form .search {
+            margin-top: 300px;
+      }
+
+      header nav .navbar form .search input {
+            margin-left: 20px;
+            width: 80%;
+            border: none;
+            color: white;
+      }
+
+      header nav .navbar form .search input::placeholder {
+            color: white;
+      }
+
+      header nav .navbar form .search .icon_search {
+            right: 10px;
+      }
+
+      header nav .navbar .cart {
+            margin: 0px auto;
+      }
+
+      /* content */
+      /* ----------------Redirect Center---------------- */
+      .redirect .redirect-center {
+            width: 412px;
+            font-size: 12px;
+            padding: 20px 20px 10px 20px;
+      }
+
+      /* ----------------Redirect Title---------------- */
+      .redirect .redirect-title {
+            width: 412px;
+            padding: 0 20px;
+      }
+
+      .redirect .redirect-title .redirect-title-content {
+            font-size: 24px;
+      }
+
+      /* ----------------Form Login---------------- */
+      .form-login {
+            width: 100%;
+            font-size: 18px;
+      }
+
+      .form-login form {
+            width: 412px;
+            padding: 20px;
+      }
+
+      /* ----------------Login Label---------------- */
+      .form-login .login-label {
+            width: 416px;
+            font-size: 24px;
+
+      }
+
+      /* -------------------------Footer--------------- */
+      .ft-container {
+            margin-top: 200px;
+            width: 100%;
+            height: auto;
+            background-color: #212121;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .ft-container .footer {
+            width: 412px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            padding: 30px 20px 0px 20px;
+            row-gap: 20px;
+      }
+
+      /* ----------------Product Label, Customer Service Label, Social Label, Customer Care Label---------------- */
+      .ft-container .footer .product .product-label,
+      .ft-container .footer .custservice .custservice-label,
+      .ft-container .footer .social .social-label,
+      .ft-container .footer .custcare .custcare-label {
+            color: white;
+            font-weight: 200;
+            padding-bottom: 10px;
+            height: 50px;
+      }
+
+      /* ----------------Style Content Div Tag---------------- */
+      .ft-container .footer .product .product-content div,
+      .ft-container .footer .custservice .custservice-content div,
+      .ft-container .footer .social .social-content div,
+      .ft-container .footer .custcare .custcare-content div {
+            padding-top: 6px;
+            padding-bottom: 6px;
+            height: 30px;
+      }
+
+      /* ----------------Ending / Ending Section---------------- */
+      .ft-container .ending {
+            width: 100%;
+            height: fit-content;
+      }
+
+      .ft-container .ending .ending-section {
+            width: 412px;
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0;
+      }
+
+      .ft-container .ending .ending-section .ending-section-disclaimer {
+            all: unset;
+            width: 412px;
+            text-align: center;
+            color: var(--color-price-original);
+      }
+
+      /* -----------------lost Your password--------------- */
+
+      .ft-container .ending .form-lost-password {
+            width: 100%;
+      }
+
+      .form-lost-password form {
+            width: 412px;
+            padding: 20px;
+      }
+
+      .form-lost-password .lost-pwd-input-username {
+            width: 100%;
+      }
+
+      .form-lost-password .lost-pwd-input-username #username {
+            width: 360px;
+      }
+}

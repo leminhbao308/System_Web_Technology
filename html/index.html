@@ -111,7 +111,7 @@
                         <i id="showFormSearch" class='bx bx-search'></i>
                     </div>
                     <div id="cartID" class="cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class='bx bx-cart-alt'></i>
                         <div id="quantity-cart" class="quantity">
                             0
                         </div>
@@ -1386,18 +1386,37 @@
         var product3 = new Swiper(".slideProduct3", {
             slidesPerView: 4,
             spaceBetween: 30,
+            breakpoints: {
+                // Khi độ rộng màn hình nhỏ hơn hoặc bằng 640px
+                412: {
+                    // Thiết lập số slide hiển thị là 1
+                    slidesPerView: 1,
+                    // Thiết lập khoảng cách giữa các slide là 0
+                    spaceBetween: 0,
+                }
+            },
             freeMode: true,
             loop: true,
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false
             },
+
         });
     </script>
     <script language="JavaScript">
         var product4 = new Swiper(".slideProduct4", {
             slidesPerView: 3,
             spaceBetween: 30,
+            breakpoints: {
+                // Khi độ rộng màn hình nhỏ hơn hoặc bằng 640px
+                412: {
+                    // Thiết lập số slide hiển thị là 1
+                    slidesPerView: 1,
+                    // Thiết lập khoảng cách giữa các slide là 0
+                    spaceBetween: 0,
+                }
+            },
             freeMode: true,
             loop: true,
             autoplay: {
