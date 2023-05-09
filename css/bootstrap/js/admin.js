@@ -2,7 +2,17 @@
 let perPage = 12; // só dòng dữ liệu
 let idPage = 1;
 let start = 0;
+
+
+if (window.innerWidth <= 412) {
+    perPage = 6
+} else if (window.innerWidth > 412) {
+    perPage = 12
+}
+
+console.log()
 let end = perPage;
+
 
 const product = [
     { id: 1, first: "Le Hoang", last: "Nam", phone: 0858484522, product: "Apple Macbook" },
@@ -161,7 +171,7 @@ $('.btn-prev').on('click', () => {
 });
 
 
-const toggleShowSidebar = document.getElementById('toggleShowSidebar') 
+const toggleShowSidebar = document.getElementById('toggleShowSidebar')
 toggleShowSidebar.addEventListener('click', () => {
     const showMenu = document.getElementById('showMenu')
     showMenu.style.left = 0;
