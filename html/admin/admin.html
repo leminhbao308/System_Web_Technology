@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.css">
+    <script src="/css/bootstrap/js/bootstrap.js"></script>
+    <script src="/css/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- custom style css -->
+    <link rel="stylesheet" href="/css/bootstrap/css/admin.css">
+    <title>Admin</title>
+    <!-- FontAweSome -->
+    <link href="/fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
+    <link href="/fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&family=Source+Code+Pro:wght@300;600&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="container-fluid">
+        <section class="row content">
+            <section id="showMenu" class="side-bar col col-2 bg-dark">
+                <div class="row fs-2 fw-bold py-3 border-bottom border-secondary">
+                    <div id="toggleClose" class="col text-light text-center ">
+                        <a style="text-decoration: none; color: white" href="/html/index.html">Devicer</a>
+                        <i id="closeSideBar" class='bx bx-chevron-left fs-3' ></i>
+                    </div>
+                </div>
+                <div class="row account py-3 border-bottom border-secondary">
+                    <div class="col col-2 avatar"><img src="https://adminlte.io/themes/v3/dist/img/user2-160x160.jpg"
+                            alt="">
+                    </div>
+                    <div class="col col-10 name lh-lg fw-semibold fs-4 text-light">
+                        Alexsander Pierce
+                    </div>
+                </div>
+                <div class="row  py-3 border-bottom border-secondary">
+                    <div class="col">
+                        <form action="">
+                            <div class="input-group flex-nowrap">
+                                <input type="search" name="search" class=" fs-4 form-control search bg-secondary"
+                                    placeholder="search">
+                                <span class=" fs-4 input-group-text bg-secondary"><i class='bx bx-search'></i></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row border-bottom border-sencondary">
+                    <div class="col">
+                        <nav class="navbar">
+                            <ul class="navbar-nav col dropdown ">
+                                <li class="row px-3 nav-item fs-5 text-light d-flex justify-content-between">
+                                    <a class="text-light nav-link fw-3 fs-3" data-bs-toggle="dropdown" href="#"
+                                        role="button" aria-expanded="false">BILL</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <div class="showData col col-10">
+                <div class="row shadow">
+                    <div class="col">
+                        <nav class="navbar navbar-expand">
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav fs-5">
+                                        <li class=" toggle-Menu nav-item">
+                                            <i id="toggleShowSidebar" class='bx bx-menu fs-2'></i>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col border data">
+                        <div class="fs-3 border row mt-3 d-flex justify-content-between title">
+                            <div class="col col-2">BILL</div>
+                            <div class="col col-6">
+                                <div class="row align-items-center hereSearch">
+                                    <div class="col col-9 content__search">
+                                        <input id="searchData" class="form-control" type="text" placeholder="Nhập vào đây">
+                                    </div>
+                                    <div class=" btnSearchNe col col-3">
+                                        <button class="form-control bg-info text-center" id="search">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="table table-striped border">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Products</th>
+                                </tr>
+                            </thead>
+                            <tbody id="product">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row pagination py-3">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <div class="total-page"></div>
+                                <div class="total-item"></div>
+                            </div>
+                            <div class="col page d-flex justify-content-end" aria-label="Page navigation example">
+                                <ul class="pagination number-page">
+                                    <li class="page-item btn-prev btn btn-secondary me-3">Previous</li>
+                                    <div class="d-flex" id="number-page">
+
+                                    </div>
+                                    <li class="page-item btn-secondary btn-next btn ms-3">Next</li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script language="Javascript" src="/css/bootstrap/js/admin.js"></script>
+</body>
+
+</html>

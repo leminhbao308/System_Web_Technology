@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Lepcha', sans-serif;
+    /* font-family: 'Source Code Pro', monospace; */
+}
+
+.content {
+    height: 100vh;
+}
+
+.account .avatar {
+    height: 51px;
+}
+
+.account .avatar img {
+    height: 100%;
+    border-radius: 100%;
+}
+
+.data {
+    height: 630px;
+}
+
+.toggle-Menu {
+    display: none;
+}
+
+#toggleClose i {
+    display: none;
+}
+
+/* Laptop 15.6 inch max-width: 1920px Full HD */
+@media only screen and (max-width: 1920px) {}
+
+/* Tablet max-width: 1024px*/
+@media only screen and (max-width: 64em) {
+    .content {
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+
+    .side-bar {
+        width: 330px;
+        height: 100vh;
+        position: absolute;
+        z-index: 1;
+        left: -330px;
+        transition: 0.24s
+    }
+
+    .showData {
+        width: 100%;
+    }
+
+    .toggle-Menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #toggleClose {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #toggleClose i {
+        display: flex;
+    }
+}
+
+/* Phone  max-width: 412px*/
+@media only screen and (max-width: 412px) {
+    #showMenu {
+        z-index: 999999;
+    }
+
+    .container-fluid .content {
+        width: 412px;
+    }
+
+    .container-fluid .showData {
+        width: 100%;
+    }
+
+    .container-fluid .showData {
+        width: 100%;
+    }
+
+    .container-fluid .showData .data .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .data .row.align-items-center.hereSearch {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        margin-bottom: 10px;
+        flex-direction: row;
+    }
+
+    .content__search {
+        width: 160px;
+    }
+
+    #searchData {
+        width: 160px;
+    }
+
+    .btnSearchNe {
+        width: 100px;
+    }
+
+    .btnSearchNe button {
+        width: 100px;
+    }
+
+    table .table.table-striped.border {
+        width: 100%;
+    }
+
+
+}

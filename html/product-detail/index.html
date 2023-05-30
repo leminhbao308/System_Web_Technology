@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="LeHoangNam_LeMinhBao">
+    <title>Apple Macbook - Devicer</title>
+    <!-- FontAweSome -->
+    <link href="/fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
+    <link href="/fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&family=Source+Code+Pro:wght@300;600&display=swap"
+        rel="stylesheet">
+    <!-- Style css -->
+    <!-- style header and footer -->
+    <link rel="stylesheet" href="/css/header-footer/header_Footer.css">
+    <!-- Style body -->
+    <link rel="stylesheet" href="/css/product-detail/product.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <!-- Contact -->
+            <div id="contactID" class="contact">
+                <div class="content">
+                    <div id="toggle-down" class="toggle_contact">
+                        <i id="down" class='bx bx-chevron-down'></i>
+                    </div>
+                    <ul id="show-info" class="info">
+                        <li>Welcome to Devicer</li>
+                        <li><span>Customer Care</span></li>
+                        <li><a href="#">1-800-123-4567</a></li>
+                    </ul>
+                    <ul id="show-account" class="account">
+                        <li><a href="/html/my-account/signup.html">Sign Up</a></li>
+                        <li><a href="/html/my-account/login.html">Log in</a></li>
+                        <li><a href="#">My List</a></li>
+                    </ul>
+                    <div id="login" class="toggle-login">
+                        <i id="show-menu" class='bx bx-menu'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <nav id="nav-fixed">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="/html/index.html"><img src="/images/logo/device-home-1-logo.png" alt="logo Devicer"
+                                title="Devicer"></a>
+                    </div>
+                    <form id="formSearch" action="#">
+                        <div class="search">
+                            <select name="categories" id="categories">
+                                <option value="allCategories">All Categories</option>
+                                <option value="acoustics">Acoustics</option>
+                                <option value="actionCamcorders">Action Camcorders</option>
+                                <option value="apple">Apple</option>
+                                <option value="appleIMac">Apple iMac</option>
+                                <option value="appleIPads">Apple iPads</option>
+                                <option value="appleIPadsMini">Apple iPads Mini</option>
+                                <option value="appleLEDTVs">Apple LED TVs</option>
+                                <option value="appleMacbook">Apple Macbook</option>
+                                <option value="asus">Asus</option>
+                                <option value="camera">Camera</option>
+                                <option value="cellPhones">Cell Phones</option>
+                                <option value="computerHardware">Computer Hardware</option>
+                                <option value="daydreamView">Daydream View</option>
+                                <option value="dellLaptop">Dell Laptop</option>
+                                <option value="earHeadphones">Ear Headphones</option>
+                                <option value="headphones">Headphones</option>
+                                <option value="HTC">HTC</option>
+                                <option value="iphone">Iphone</option>
+                                <option value="Keyboards">Keyboards</option>
+                                <option value="laptops">Laptops</option>
+                                <option value="ledTVs">LED TVs</option>
+                                <option value="Meizu">Meizu</option>
+                                <option value="Mice">Mice</option>
+                                <option value="Motorola">Motorola</option>
+                                <option value="Monitors">Monitors</option>
+                                <option value="nokia">Nokia</option>
+                                <option value="onePlus">OnePlus</option>
+                                <option value="over-Ear&On-EarHeadphones">Over-Ear & On-Ear Headphones</option>
+                                <option value="powerbank">Powerbank</option>
+                                <option value="samsung">Samsung</option>
+                                <option value="smartWatches">Smart Watches</option>
+                                <option value="sony">Sony</option>
+                                <option value="tablets">Tablets</option>
+                                <option value="televisions">Televisions</option>
+                                <option value="xiaomi">Xiaomi</option>
+                            </select>
+                            <input type="text" placeholder="Search for products">
+                            <div class="icon_search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div id="toggleCloseSearch" class="close">
+                            <i id="closeSearch" class="bx bx-x"></i>
+                        </div>
+                    </form>
+                    <div id="toggleSearch" class="icon_search">
+                        <i id="showFormSearch" class='bx bx-search'></i>
+                    </div>
+                    <div id="cartID" class="cart">
+                        <i class='bx bx-cart-alt'></i>
+                        <div id="quantity-cart" class="quantity">
+                            0
+                        </div>
+                        <div class="info">
+                            <div class="title">Your Cart</div>
+                            <div class="total-price">$0.00</div>
+                        </div>
+                        <div id="popup" class="pop-up">
+                            <div class="content">
+                                <div class="products">
+                                    <div class="left">
+                                        <img src="/images/product03/p4.jpg" alt="">
+                                    </div>
+                                    <div class="right">
+                                        <div class="title">
+                                            <div class="info">
+                                                Apple Macbook
+                                            </div>
+                                            <div class="exit">
+                                                <i id="close_cart" class='bx bx-x'></i>
+                                            </div>
+                                        </div>
+                                        <div class="money">
+                                            <span class="price"><span class="unit">$</span><span
+                                                    class="num">1,000.00</span></span> x <span class="quantity">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total-price">
+                                    <span class="title">Subtotal:</span> <span class="unit">$</span><span
+                                        class="num">1,000.00</span>
+                                </div>
+                                <div class="control">
+                                    <button id="viewCartInCartPopup" class="btn btn-viewcart">VIEW CART</button>
+                                    <button class="btn btn-checkout">CHECKOUT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="showMenu" class="togle-menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </div>
+                <div id="navMenu" class="menu">
+                    <ul class="level01">
+                        <li><a href="/html/index.html">Home <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#">Features <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="level02">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Contacts</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Sale</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shortcodes <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="level02 ver1">
+                                <li>
+                                    <a class="title" href="#">1</a>
+                                    <a href="#">Blog shortcode</a>
+                                    <a href="#">Button & icon</a>
+                                    <a href="#">Clients</a>
+                                    <a href="#">Counter & progress Bars</a>
+                                    <a href="#">Custom HTML, CSS, JS</a>
+                                    <a href="#">Dividers</a>
+                                </li>
+                                <li><a class="title" href="#">2</a>
+                                    <a href="#">Blog shortcode</a>
+                                    <a href="#">Button & icon</a>
+                                    <a href="#">Clients</a>
+                                    <a href="#">Counter & progress Bars</a>
+                                    <a href="#">Custom HTML, CSS, JS</a>
+                                    <a href="#">Dividers</a>
+                                </li>
+                                <li><a class="title" href="#">3</a>
+                                    <a href="#">Blog shortcode</a>
+                                    <a href="#">Button & icon</a>
+                                    <a href="#">Clients</a>
+                                    <a href="#">Counter & progress Bars</a>
+                                    <a href="#">Custom HTML, CSS, JS</a>
+                                    <a href="#">Dividers</a>
+                                </li>
+                                <li><a class="title" href="#">4</a>
+                                    <a href="#">Blog shortcode</a>
+                                    <a href="#">Button & icon</a>
+                                    <a href="#">Clients</a>
+                                    <a href="#">Counter & progress Bars</a>
+                                    <a href="#">Custom HTML, CSS, JS</a>
+                                    <a href="#">Dividers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Post Types <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="level02 ver1">
+                                <li>
+                                    <a class="title" href="#">Blog</a>
+                                    <a href="#">Standard Blog</a>
+                                    <a href="#">Masonry Blog</a>
+                                    <a href="#">Timeline Blog</a>
+                                </li>
+                                <li><a class="title" href="#">Project Grid</a>
+                                    <a href="#">Large Gap</a>
+                                    <a href="#">No Gap</a>
+                                    <a href="#">1 Pixel Gap</a>
+                                </li>
+                                <li><a class="title" href="#">Masonry Puzzle</a>
+                                    <a href="#">Large Gap</a>
+                                    <a href="#">No Gap</a>
+                                    <a href="#">1 Pixel Gap</a>
+                                </li>
+                                <li><a class="title" href="#">Profiles</a>
+                                    <a href="#">Horizontal</a>
+                                    <a href="#">Vertical</a>
+                                    <a href="#">Open Profile</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <section class="wrapper">
+        <nav>
+            <div class="nav-item">
+                <a href="/html/index.html">Home</a> /
+            </div>
+            <div class="nav-item">
+                <a href="#">Laptops</a> /
+            </div>
+            <div class="nav-item">
+                <a href="#">Apple Macbook</a> /
+            </div>
+            <div class="nav-item active">
+                <a href="#">Apple Macbook</a>
+            </div>
+        </nav>
+        <div class="product">
+            <div class="left">
+                <img src="/images/product03/p4.jpg" alt="">
+            </div>
+            <div class="right">
+                <div class="title">
+                    Apple Macbook
+                </div>
+                <div class="star-rating">
+                    <img src="/images/starRating/star4.png" alt="">
+                </div>
+                <div class="price">
+                    <span class="original"><span class="unit">$</span><span class="num">1,000.00</span></span>
+                    <span class="sale"><span class="unit"></span><span class="num"></span></span>
+                </div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus,
+                    quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem
+                    pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper
+                    dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec
+                    sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed
+                    lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim
+                    ut.
+                </div>
+                <div class="control">
+                    <div class="quantity">
+                        <input type="number" class="quantityProduct" value="1" min="1" step="1">
+                    </div>
+                    <div class="btn-add-to-card">
+                        <button id="btn_addToCart" class="btn">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="col1">Categories:</div>
+                        <div class="col"><a href="#">Apple Macbook</a>, <a href="#">Laptops</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col1">Share:</div>
+                        <div class="col"><a href="#"><i class='bx bxl-facebook'></i></a><a href="#"><i
+                                    class='bx bxl-twitter'></i></a><a href="#"><i
+                                    class="fa-brands fa-pinterest-p"></i></a></div>
+                    </div>
+                    <div class="row hr"><a href="#">Add to Wishlist</a></div>
+                    <div class="row"><a href="#"><i class="fa-solid fa-rotate"></i> View Compare</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="info-detail">
+            <nav>
+                <div class="nav-item">
+                    Description
+                </div>
+                <div class="nav-item">
+                    Additional information
+                </div>
+                <div class="nav-item">
+                    Reviews (1)
+                </div>
+            </nav>
+            <div class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis
+                ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at.
+                Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac
+                aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non
+                ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et
+                tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta
+                egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Cras sodales nisi pretium placerat tempus.</li>
+                    <li>Pellentesque id erat sodales, mollis turpis sed, bibendum justo.</li>
+                    <li>Nunc condimentum tortor non fringilla congue.</li>
+                    <li>Donec tempus odio eu libero mattis, in posuere nisl vulputate.</li>
+                </ul>
+                Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex,
+                eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel
+                posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante
+                a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida.
+            </div>
+        </div>
+        <div class="related-product">
+            <div class="title">
+                Related Products
+            </div>
+            <div class="product">
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/product02/Xiaomi.jpg" alt="">
+                    </div>
+                    <header>
+                        <div class="title">Cell Phones, Xiaomi</div>
+                        <div class="description">
+                            Xiaomi Mi Mix 2
+                        </div>
+                    </header>
+                    <section>
+                        <span class="price">$55.00</span>
+                        <del class="original"><span class="unit"></span><span class="num"></span></del>
+                        <div class="star-rating">
+                            <img src="/images/starRating/star5.png" alt="">
+                        </div>
+                    </section>
+                    <footer>
+                        <button>ADD TO CART</button>
+                    </footer>
+                    <div class="controls">
+                        <div class="item">
+                            <i class='bx bx-heart'></i>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="item">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/product02/OnePlus.jpg" alt="">
+                    </div>
+                    <header>
+                        <div class="title">Cell Phones, OnePlus</div>
+                        <div class="description">
+                            OnePlus 5T
+                        </div>
+                    </header>
+                    <section>
+                        <span class="price">$120.00</span>
+                        <del class="original"><span class="unit"></span><span class="num"></span></del>
+                        <div class="star-rating">
+                            <img src="/images/starRating/star4.png" alt="">
+                        </div>
+                    </section>
+                    <footer>
+                        <button>ADD TO CART</button>
+                    </footer>
+                    <div class="controls">
+                        <div class="item">
+                            <i class='bx bx-heart'></i>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="item">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/product02/VirtualGlass.jpg" alt="">
+                    </div>
+                    <header>
+                        <div class="title">Cconputer Hardware, Daydream view</div>
+                        <div class="description">
+                            Good Daydream VR
+                        </div>
+                    </header>
+                    <section>
+                        <span class="price sale">$400.00</span>
+                        <del class="original"><span class="unit">$</span><span class="num">420.00</span></del>
+                        <div class="star-rating">
+                            <img src="/images/starRating/star4.png" alt="">
+                        </div>
+                    </section>
+                    <footer>
+                        <button>ADD TO CART</button>
+                    </footer>
+                    <div class="controls">
+                        <div class="item">
+                            <i class='bx bx-heart'></i>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="item">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/product02/JBL.jpg" alt="">
+                    </div>
+                    <header>
+                        <div class="title">Acoustics. Computer Hardware</div>
+                        <div class="description">
+                            JBL Pulse 3
+                        </div>
+                    </header>
+                    <section>
+                        <span class="price">$400.00</span>
+                        <del class="original"><span class="unit"></span><span class="num"></span></del>
+                        <div class="star-rating">
+                            <img src="/images/starRating/star4.png" alt="">
+                        </div>
+                    </section>
+                    <footer>
+                        <button>ADD TO CART</button>
+                    </footer>
+                    <div class="controls">
+                        <div class="item">
+                            <i class='bx bx-heart'></i>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="item">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="btn_addToCart" style="display: none"></button>
+        <button id="viewCartInCartPopup" style="display: none"></button>
+    </section>
+    <footer id="footer">
+        <div id="links-list">
+            <div class="wrapper">
+                <div class="col1">
+                    <div class="title">Products</div>
+                    <div class="link"><a href="#">Apple Watch Series</a></div>
+                    <div class="link"><a href="#">Refubished iPad 4th</a></div>
+                    <div class="link"><a href="#">Apple 9.7" iPad</a></div>
+                    <div class="link"><a href="#">Apple iPhone 6s 16GB</a></div>
+                    <div class="link"><a href="#">Apple Magic Mouse</a></div>
+                </div>
+                <div class="col1">
+                    <div class="title">Customer Service</div>
+                    <div class="link"><a href="#">News</a></div>
+                    <div class="link"><a href="#">FAQ</a></div>
+                    <div class="link"><a href="#">Shop</a></div>
+                    <div class="link"><a href="#">About us</a></div>
+                    <div class="link"><a href="#">Contacts</a></div>
+                </div>
+                <div class="col1">
+                    <div class="title">Socials</div>
+                    <div class="link"><a href="#">Twitter</a></div>
+                    <div class="link"><a href="#">YouTube</a></div>
+                    <div class="link"><a href="#">Instagram</a></div>
+                    <div class="link"><a href="#">Snapchat</a></div>
+                    <div class="link"><a href="#">Facebook</a></div>
+                </div>
+                <div class="col1">
+                    <div class="title">Customer Care</div>
+                    <div class="link"><a href="#">Sale</a></div>
+                    <div class="link"><a href="#">Shop</a></div>
+                    <div class="link"><a href="#">Cart</a></div>
+                    <div class="link"><a href="#">My Orders</a></div>
+                    <div class="link"><a href="#">Contacts</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="cre">
+            <div class="wrapper">
+                <div class="col2">This is a sample website - cmsmasters © 2022 / All Rights Reserved</div>
+                <div class="col2">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- My js -->
+    <script src="/javascript/scrollFixed.js"></script>
+    <!-- Cart -->
+    <script src="/javascript/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- responsive header -->
+    <script src="/javascript/responsiveHeader.js"></script>
+</body>
+
+</html>
