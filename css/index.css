@@ -2261,10 +2261,6 @@ header nav .menu .level01 {
         position: relative;
     }
 
-    .product02 .product .card:hover {
-        border-color: var(--color-blue);
-        cursor: pointer;
-    }
 
     .product02 .product .card .image {
         width: 100%;
@@ -2294,7 +2290,14 @@ header nav .menu .level01 {
     }
 
     .product02 .product .card:hover .controls {
-        all: unset;
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        left: unset;
+        right: 20px;
+        transition: unset;
+        opacity: 1;
+        z-index: 999999;
     }
 
     /* Deal - wraper */
@@ -2524,7 +2527,7 @@ header nav .menu .level01 {
     }
 }
 
-/* Phone  max-width: 600px*/
+/* Phone  max-width: 412px*/
 @media only screen and (max-width: 412px) {
 
 
