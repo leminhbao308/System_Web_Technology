@@ -481,7 +481,8 @@ header nav .menu .level01 {
 .form-signup .signup-input-email #email,
 .form-signup .signup-input-fullname #fullname,
 .form-signup .signup-input-phone #phone,
-.form-signup .signup-input-address #address {
+.form-signup .signup-input-address #address,
+.form-signup .signup-input-dob #dob {
       width: 90%;
       height: 40px;
       text-indent: 20px;
@@ -490,25 +491,12 @@ header nav .menu .level01 {
       padding: 0 20px 0 0;
 }
 
-.form-signup .signup-input-dob #dob {
-      height: 40px;
-      text-indent: 20px;
-      border: 1px solid #4a4a4d;
-      border-radius: 100px !important;
-      padding: 0px 50px 0px 0px;
-}
-
 .form-login .login-input-username #username:focus,
 .form-signup .signup-input-username #username:focus,
 .form-signup .signup-input-email #email:focus,
 .form-signup .signup-input-fullname #fullname:focus,
 .form-signup .signup-input-phone #phone:focus,
-.form-signup .signup-input-address #address:focus {
-      border: 1px solid #3350fe;
-      border-radius: 100px !important;
-      outline: none;
-}
-
+.form-signup .signup-input-address #address:focus,
 .form-signup .signup-input-dob #dob:focus {
       border: 1px solid #3350fe;
       border-radius: 100px !important;
