@@ -956,7 +956,7 @@ header nav .menu .level01 {
 .product02 .product .card:hover .controls {
     left: 80%;
     opacity: 1;
-    z-index: 999999999;
+    z-index: 9999;
     cursor: pointer;
 }
 
