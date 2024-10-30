@@ -1608,6 +1608,25 @@ header nav .menu .level01 {
     cursor: pointer;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: var(--color-blue);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 26px;
+    display: none;
+}
+
+.back-to-top  a {
+    color: white;
+    text-decoration: none;
+}
+
 /* ----------------RESPONSIVE---------------- */
 
 /* Laptop 15.6 inch max-width: 1920px Full HD */
