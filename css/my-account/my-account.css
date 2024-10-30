@@ -424,7 +424,8 @@ header nav .menu .level01 {
 /*========================================================== LOGIN and SIGNUP SECTION START==========================================================*/
 
 /* ----------------Form Login + Sign Up---------------- */
-.form-login, .form-signup {
+.form-login,
+.form-signup {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -433,48 +434,85 @@ header nav .menu .level01 {
       font-size: 15px;
 }
 
-.form-login form, .form-signup form {
+.form-login form,
+.form-signup form {
       width: 1240px;
       padding: 30px;
 }
 
 /* ----------------Login + SignUp Label---------------- */
-.form-login .login-label, .form-signup .signup-label {
+.form-login .login-label,
+.form-signup .signup-label {
       width: 1240px;
-      font-size: 25px;
+      font-size: 28px;
       color: #4a4a4d;
       padding: 25px 0px 10px 0px;
+      font-weight: 700;
 }
 
 /* ----------------Login + Sign Up Username---------------- */
-.form-login .login-username, .form-signup .signup-username {
+.form-login .login-username,
+.form-signup .signup-username,
+.form-signup .signup-Email,
+.form-signup .signup-fullname,
+.form-signup .signup-phone,
+.form-signup .signup-address,
+.form-signup .signup-dob  {
       padding-top: 15px;
       display: flex;
 }
 
 /* ----------------Login + Sign Up Input Username---------------- */
-.form-login .login-input-username #username, .form-signup .signup-input-username #username {
+.form-login .login-input-username #username,
+.form-signup .signup-input-username #username,
+.form-signup .signup-input-email #email,
+.form-signup .signup-input-fullname #fullname,
+.form-signup .signup-input-phone #phone,
+.form-signup .signup-input-address #address {
       width: 1180px;
       height: 40px;
       text-indent: 20px;
       border: 1px solid #4a4a4d;
       border-radius: 100px !important;
+      padding: 0 20px 0 0;
 }
 
-.form-login .login-input-username #username:focus, .form-signup .signup-input-username #username:focus {
+.form-signup .signup-input-dob #dob {
+      height: 40px;
+      text-indent: 20px;
+      border: 1px solid #4a4a4d;
+      border-radius: 100px !important;
+      padding: 0px 50px 0px 0px;
+}
+
+.form-login .login-input-username #username:focus,
+.form-signup .signup-input-username #username:focus,
+.form-signup .signup-input-email #email:focus,
+.form-signup .signup-input-fullname #fullname:focus,
+.form-signup .signup-input-phone #phone:focus,
+.form-signup .signup-input-address #address:focus {
+      border: 1px solid #3350fe;
+      border-radius: 100px !important;
+      outline: none;
+}
+
+.form-signup .signup-input-dob #dob:focus {
       border: 1px solid #3350fe;
       border-radius: 100px !important;
       outline: none;
 }
 
 /* ----------------Login + Sign Up Password---------------- */
-.form-login .login-password, .form-signup .signup-password {
+.form-login .login-password,
+.form-signup .signup-password {
       display: flex;
       padding-top: 15px;
 }
 
 /* ----------------Login + Sign Up Input Password---------------- */
-.form-login .login-input-password #password, .form-signup .signup-input-password #password, .form-signup .signup-input-confirm-password #confirm-password {
+.form-login .login-input-password #password,
+.form-signup .signup-input-password #password,
+.form-signup .signup-input-confirm-password #confirm-password {
       width: 1180px;
       height: 40px;
       text-indent: 20px;
@@ -486,7 +524,8 @@ header nav .menu .level01 {
       margin-bottom: 15px;
 }
 
-.form-login .login-input-password #password:focus, .form-signup .signup-input-password #password:focus {
+.form-login .login-input-password #password:focus,
+.form-signup .signup-input-password #password:focus {
       border: 1px solid #3350fe;
       border-radius: 100px !important;
       outline: none;
@@ -498,10 +537,11 @@ header nav .menu .level01 {
 }
 
 /* ----------------Button Login + Sign Up---------------- */
-.form-login .button-login #login, .form-signup .button-signup #signup {
+.form-login .button-login #login,
+.form-signup .button-signup #signup {
       width: 100px;
       height: 40px;
-      font-size: 11px;
+      font-size: 14px;
       font-weight: bold;
       border: 1px solid #4a4a4d;
       border-radius: 100px !important;
@@ -510,7 +550,8 @@ header nav .menu .level01 {
       transition: 0.2s;
 }
 
-.form-login .button-login #login:hover, .form-signup .button-signup #signup:hover {
+.form-login .button-login #login:hover,
+.form-signup .button-signup #signup:hover {
       color: white;
       border: 1px solid #3350fe;
       border-radius: 100px !important;
