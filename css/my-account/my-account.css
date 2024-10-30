@@ -421,10 +421,10 @@ header nav .menu .level01 {
       border-bottom: 1px solid #4a4a4d;
 }
 
-/*========================================================== LOGIN SECTION START==========================================================*/
+/*========================================================== LOGIN and SIGNUP SECTION START==========================================================*/
 
-/* ----------------Form Login---------------- */
-.form-login {
+/* ----------------Form Login + Sign Up---------------- */
+.form-login, .form-signup {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -433,27 +433,27 @@ header nav .menu .level01 {
       font-size: 15px;
 }
 
-.form-login form {
+.form-login form, .form-signup form {
       width: 1240px;
       padding: 30px;
 }
 
-/* ----------------Login Label---------------- */
-.form-login .login-label {
+/* ----------------Login + SignUp Label---------------- */
+.form-login .login-label, .form-signup .signup-label {
       width: 1240px;
       font-size: 25px;
       color: #4a4a4d;
       padding: 25px 0px 10px 0px;
 }
 
-/* ----------------Login Username---------------- */
-.form-login .login-username {
+/* ----------------Login + Sign Up Username---------------- */
+.form-login .login-username, .form-signup .signup-username {
       padding-top: 15px;
       display: flex;
 }
 
-/* ----------------Login Input Username---------------- */
-.form-login .login-input-username #username {
+/* ----------------Login + Sign Up Input Username---------------- */
+.form-login .login-input-username #username, .form-signup .signup-input-username #username {
       width: 1180px;
       height: 40px;
       text-indent: 20px;
@@ -461,20 +461,20 @@ header nav .menu .level01 {
       border-radius: 100px !important;
 }
 
-.form-login .login-input-username #username:focus {
+.form-login .login-input-username #username:focus, .form-signup .signup-input-username #username:focus {
       border: 1px solid #3350fe;
       border-radius: 100px !important;
       outline: none;
 }
 
-/* ----------------Login Password---------------- */
-.form-login .login-password {
+/* ----------------Login + Sign Up Password---------------- */
+.form-login .login-password, .form-signup .signup-password {
       display: flex;
       padding-top: 15px;
 }
 
-/* ----------------Login Input Password---------------- */
-.form-login .login-input-password #password {
+/* ----------------Login + Sign Up Input Password---------------- */
+.form-login .login-input-password #password, .form-signup .signup-input-password #password, .form-signup .signup-input-confirm-password #confirm-password {
       width: 1180px;
       height: 40px;
       text-indent: 20px;
@@ -482,7 +482,11 @@ header nav .menu .level01 {
       border-radius: 100px !important;
 }
 
-.form-login .login-input-password #password:focus {
+.signup-input-confirm-password {
+      margin-bottom: 15px;
+}
+
+.form-login .login-input-password #password:focus, .form-signup .signup-input-password #password:focus {
       border: 1px solid #3350fe;
       border-radius: 100px !important;
       outline: none;
@@ -493,8 +497,8 @@ header nav .menu .level01 {
       padding-top: 15px;
 }
 
-/* ----------------Button Login---------------- */
-.form-login .button-login #login {
+/* ----------------Button Login + Sign Up---------------- */
+.form-login .button-login #login, .form-signup .button-signup #signup {
       width: 100px;
       height: 40px;
       font-size: 11px;
@@ -506,13 +510,14 @@ header nav .menu .level01 {
       transition: 0.2s;
 }
 
-.form-login .button-login #login:hover {
+.form-login .button-login #login:hover, .form-signup .button-signup #signup:hover {
       color: white;
       border: 1px solid #3350fe;
       border-radius: 100px !important;
       background-color: #3350fe;
       -webkit-transition: 0.5s;
       transition: 0.5s;
+      cursor: pointer;
 }
 
 /* ----------------Lost Password---------------- */
@@ -525,7 +530,7 @@ header nav .menu .level01 {
       color: #3350fe;
 }
 
-/*========================================================== LOGIN SECTION END==========================================================*/
+/*========================================================== LOGIN and SIGNUP SECTION END==========================================================*/
 
 
 /*==================================================== LOST PASSWORD SECTION START=======================================================*/
