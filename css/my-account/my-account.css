@@ -440,10 +440,23 @@ header nav .menu .level01 {
       padding: 30px;
 }
 
+.form-signup__layout-column {
+      width: 1240px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: start;
+}
+
+.form-signup-layout-column__left,
+.form-signup-layout-column__right {
+      width: 50%;
+}
+
 /* ----------------Login + SignUp Label---------------- */
 .form-login .login-label,
 .form-signup .signup-label {
-      width: 1240px;
+      width: 100%;
       font-size: 28px;
       color: #4a4a4d;
       padding: 25px 0px 10px 0px;
@@ -457,7 +470,7 @@ header nav .menu .level01 {
 .form-signup .signup-fullname,
 .form-signup .signup-phone,
 .form-signup .signup-address,
-.form-signup .signup-dob  {
+.form-signup .signup-dob {
       padding-top: 15px;
       display: flex;
 }
@@ -469,7 +482,7 @@ header nav .menu .level01 {
 .form-signup .signup-input-fullname #fullname,
 .form-signup .signup-input-phone #phone,
 .form-signup .signup-input-address #address {
-      width: 1180px;
+      width: 90%;
       height: 40px;
       text-indent: 20px;
       border: 1px solid #4a4a4d;
@@ -513,7 +526,7 @@ header nav .menu .level01 {
 .form-login .login-input-password #password,
 .form-signup .signup-input-password #password,
 .form-signup .signup-input-confirm-password #confirm-password {
-      width: 1180px;
+      width: 90%;
       height: 40px;
       text-indent: 20px;
       border: 1px solid #4a4a4d;
